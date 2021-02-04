@@ -44,7 +44,7 @@ function readRows(rowTexts: string[]) {
         const statName = matches[0]
         const values = text.match(/(?<base>\d+\.?\d*).*?(?<perLevel>\d+\.?\d*)/)
         if (!values) continue;
-        const [base, perLevel] = values;
+        const {base, perLevel} = values.groups;
         if (!base || !perLevel) continue;
         const baseStat = parseFloat(base)
         const perLevelStat = parseFloat(perLevel)
