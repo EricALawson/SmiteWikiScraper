@@ -6,7 +6,7 @@ import readOneGod from './readOneGod';
 
 const SmiteWikiURL = 'https://smite.gamepedia.com';
 
-(async function scrape() {
+export default async function scrapeGods(count?: number) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(SmiteWikiURL);
@@ -14,7 +14,9 @@ const SmiteWikiURL = 'https://smite.gamepedia.com';
     let urls = await page.$$eval("div.fpbox.smite-window span a", links => links.map(el => el.getAttribute('href')));
     urls = urls.map(url => SmiteWikiURL + url)
     console.log('urls: ', urls)
-    // urls = urls.slice(0,1)
+    if (count) { //used for testing, to scrape one page
+        urls = urls.slice(0,count)
+    }
     const gods = {};
     for (const url of urls) {
         const god = await readOneGod(browser.newPage(), url);
@@ -26,4 +28,6 @@ const SmiteWikiURL = 'https://smite.gamepedia.com';
     
     const json = JSON.stringify(gods, null, 4);
     fs.writeFileSync('gods.json', json);
-})();
+
+    return gods;
+};
