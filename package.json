@@ -4,13 +4,12 @@
   "description": "webscraper to read smite wiki and save item and god stats to a file",
   "main": "src/index.js",
   "dependencies": {
+    "@types/mongodb": "^3.6.7",
     "@types/node": "^14.14.25",
     "@types/puppeteer": "^5.4.3",
-    "@types/selenium-webdriver": "^4.0.11",
     "chromedriver": "^87.0.7",
+    "mongodb": "^3.6.4",
     "puppeteer": "^5.5.0",
-    "selenium": "^2.20.0",
-    "selenium-webdriver": "^4.0.0-alpha.8",
     "smite-timeline": "github:EricALawson/smite-timeline-react#master",
     "yargs": "^16.2.0"
   },
@@ -23,7 +22,9 @@
   },
   "scripts": {
     "test-one-god": "tsc && node -r source-map-support/register build/src/entrypoints.js testgods",
-    "start": "tsc && node -r source-map-support/register build/src/entrypoints.js gods"
+    "test-one-item": "tsc && node -r source-map-support/register build/src/entrypoints.js testitems",
+    "start": "tsc && node -r source-map-support/register build/src/entrypoints.js gods",
+    "mongo": "tsc && node -r source-map-support/register build/src/index.js gods"
   },
   "author": "Eric Lawson",
   "license": "ISC"
