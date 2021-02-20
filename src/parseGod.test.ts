@@ -1,0 +1,36 @@
+import fs from 'fs';
+import God from 'smite-timeline/src/data_objects/God';
+import parseGod, { parseAttackProgression, parseDamage, parseGodName, parseStat } from './parseGod';
+
+test('parse god\'s name', () => {
+    const testStr = '<table class="infobox"><tbody><tr><th colspan="2" class="title">Baba Yaga</th></tr><tr>';
+    const name = parseGodName(testStr);
+    expect(name).toBe('Baba Yaga');
+});
+
+test('parsing common stats', () => {
+    const teststr = '<tr style=""><th>Health:</th><td><font color="#23b905">400(+73)</font></td></tr>'
+    const  stats = parseStat(teststr, 'Health');
+    expect(stats.base).toBe(400);
+    expect(stats.perLevel).toBe(73);
+});
+
+test('parsing damage', () => {
+    const teststr = '<th colspan="2" style="text-align: center;">Basic Attack</th></tr><tr style=""><th>Damage:</th><td>35 (+ 1.5)<br>+ 20% of Magical Power</td></tr><tr style="">';
+    const stats = parseDamage(teststr);
+    expect(stats.baseDamage).toBe(35);
+    expect(stats.perLevelDamage).toBe(1.5);
+    expect(stats.multiplier).toBe(0.2);
+});
+
+test('parsing damage', () => {
+    const teststr = '<th colspan="2" style="text-align: center;">Basic Attack</th></tr><tr style=""><th>Damage:</th><td>38 (+ 2.4)<br>+ 100% of Physical Power</td></tr><tr style=""><th>Progression:</th><td>1/.5/.5/.5/1.5x damage and 1/.5/.5/.5/1.5x swing time</td></tr><tr>';
+    const progression = parseAttackProgression(teststr);
+    expect(progression).toEqual([1, 0.5, 0.5, 0.5, 1.5]);
+});
+
+test('parse a complete God object', () => {
+    const testHTML = fs.readFileSync('./testHTML.html').toString();
+    const god = parseGod(testHTML);
+    expect(god).toBeDefined;
+});

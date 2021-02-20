@@ -15,16 +15,17 @@
   },
   "devDependencies": {
     "@types/chromedriver": "^81.0.0",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
     "source-map-support": "^0.5.19",
+    "ts-jest": "^26.5.1",
     "ts-node": "^8.10.2",
     "tslint": "^6.1.3",
     "typescript": "^4.1.3"
   },
   "scripts": {
-    "test-one-god": "tsc && node -r source-map-support/register build/src/entrypoints.js testgods",
-    "test-one-item": "tsc && node -r source-map-support/register build/src/entrypoints.js testitems",
-    "start": "tsc && node -r source-map-support/register build/src/entrypoints.js gods",
-    "mongo": "tsc && node -r source-map-support/register build/src/index.js gods"
+    "test": "jest",
+    "start": "tsc && node -r source-map-support/register build/src/index.js gods"
   },
   "author": "Eric Lawson",
   "license": "ISC"
