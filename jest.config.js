@@ -9,4 +9,5 @@ module.exports = {
     "transform": {
         "^.+\\.(ts|tsx)$": "ts-jest"
     },
-}
+    "transformIgnorePatterns" : ["/node_modules/(?!(smite-timeline/src/data_objects)/)"],
+} 
