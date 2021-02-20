@@ -1,12 +1,14 @@
 import { fstat } from 'fs';
 import mongodb from 'mongodb';
 import fs from 'fs';
+import scrapeWiki from './scrapeWiki';
 
 //Webscraper Main Entrypoint
+(async function() {
+    const rawHTML = await scrapeWiki();
+})();
 
-
-
-type RawHTML = {
+export type RawHTML = {
     name: string,
     type: "god" | "item",
     html: string
