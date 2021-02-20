@@ -30,7 +30,7 @@ test('parsing damage', () => {
 });
 
 test('parse a complete God object', () => {
-    const testHTML = fs.readFileSync('./testHTML.html').toString();
+    const testHTML = fs.readFileSync('./testHTML.txt').toString();
     const god = parseGod(testHTML);
     expect(god).toBeDefined;
 });
