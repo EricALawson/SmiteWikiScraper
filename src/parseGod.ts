@@ -13,6 +13,7 @@ export default function parseGod(html: string): God {
     const {attackDuration, baseAttackSpeed, perLevelAttackSpeed} = parseAttackSpeed(html);
     const moveSpeed = parseMoveSpeed(html);
     const range = parseRange(html);
+    const imageURL = parseImageURL(html);
 
     const god: God = {
         name: name,
@@ -39,13 +40,16 @@ export default function parseGod(html: string): God {
             autoAttackDamage: perLevelDamage,
             attackSpeed: perLevelAttackSpeed,
         }),
-        image: "https://web2.hirez.com/smite/god-cards/" + name.toLowerCase().replace(/\s/g, "-") + ".jpg"
+        image: imageURL,
     } as God;
     return god;
 }
 
-export function getImage(html: string) {
-
+export function parseImageURL(html: string) {
+    const regex = /<img.*?src="(.*?)"/i;
+    const match = regex.exec(html);
+    if (!match) throw new Error(`Could not read image URL from html:\n${html}`);
+    return match[1];
 }
 
 export function parseGodName(html): string {

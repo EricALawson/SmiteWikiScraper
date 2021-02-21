@@ -1,6 +1,6 @@
 import fs from 'fs';
 import God from 'smite-timeline/src/data_objects/God';
-import parseGod, { parseAttackProgression, parseDamage, parseGodName, parseStat } from './parseGod';
+import parseGod, { parseAttackProgression, parseDamage, parseGodName, parseImageURL, parseStat } from './parseGod';
 
 test('parse god\'s name', () => {
     const testStr = '<table class="infobox"><tbody><tr><th colspan="2" class="title">Baba Yaga</th></tr><tr>';
@@ -33,4 +33,10 @@ test('parse a complete God object', () => {
     const testHTML = fs.readFileSync('./testHTML.txt').toString();
     const god = parseGod(testHTML);
     expect(god).toBeDefined;
+});
+
+test('parsing image url', () => {
+    const testHTML = '<a href="/File:SkinArt_Cerberus_Default.jpg" class="image"><img alt="SkinArt Cerberus Default.jpg" src="https://static.wikia.nocookie.net/smite_gamepedia/images/d/de/SkinArt_Cerberus_Default.jpg/revision/latest/scale-to-width-down/250?cb=20180109181100" decoding="async" width="250" height="333"></a>';
+    const url = parseImageURL(testHTML);
+    expect(url).toBe('https://static.wikia.nocookie.net/smite_gamepedia/images/d/de/SkinArt_Cerberus_Default.jpg/revision/latest/scale-to-width-down/250?cb=20180109181100')
 });
