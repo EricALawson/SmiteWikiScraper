@@ -3,11 +3,13 @@ import StatBlock from "smite-timeline/src/data_objects/StatBlock";
 
 
 export default function parseGod(html: string): God {
-    const name = parseGodName(html);
+    const name = parseName(html);
     const { base: baseHealth, perLevel: perLevelHealth } = parseStat(html, 'Health');
     const { base: baseMana, perLevel: perLevelMana } = parseStat(html, 'Mana');
     const { base: basehp5, perLevel: perLevelhp5 } = parseStat(html, 'HP5');
     const { base: basemp5, perLevel: perLevelmp5 } = parseStat(html, 'MP5');
+    const { base: basePhysicalProtection, perLevel: perLevelPhysicalProtection } = parseStat(html, 'Physical');
+    const { base: baseMagicalProtection, perLevel: perLevelMagicalProtection } = parseStat(html, 'Magical');
     const attackProgression = parseAttackProgression(html);
     const { baseDamage, perLevelDamage, multiplier} = parseDamage(html);
     const {attackDuration, baseAttackSpeed, perLevelAttackSpeed} = parseAttackSpeed(html);
@@ -30,15 +32,19 @@ export default function parseGod(html: string): God {
             hp5: basehp5,
             mp5: basemp5,
             autoAttackDamage: baseDamage,
-            attackSpeed: baseAttackSpeed
+            attackSpeed: baseAttackSpeed,
+            physicalProtection: basePhysicalProtection,
+            magicalProtection: baseMagicalProtection
         }),
         perLevelStats: StatBlock({
             health: perLevelHealth,
             mana: perLevelMana,
             hp5: perLevelhp5,
-            mp5: perLevelmp5,
+            mp5: perLevelmp5, 
             autoAttackDamage: perLevelDamage,
             attackSpeed: perLevelAttackSpeed,
+            physicalProtection: perLevelPhysicalProtection,
+            magicalProtection: perLevelMagicalProtection
         }),
         image: imageURL,
     } as God;
@@ -52,7 +58,7 @@ export function parseImageURL(html: string) {
     return match[1];
 }
 
-export function parseGodName(html): string {
+export function parseName(html): string {
     const regex = /class="title">(.*?)</i;
     const match = regex.exec(html);
     if (!match) throw new Error(`could not parse god's name from:\n${html}`);
@@ -73,7 +79,7 @@ export function parseStat(html: string, statName: string) {
 }
 
 export function parseDamage(html: string) {
-    const regex = /<th>Damage.*>(?<base>\d+\.?\d*).*?(?<perLevel>\d+\.?\d*).*?(?<multiplier>\d+)%/i;
+    const regex = /<th>Damage.*?>(?<base>\d+\.?\d*).*?(?<perLevel>\d+\.?\d*).*?(?<multiplier>\d+)%/i;
     const match = regex.exec(html);
     if (!match) throw new Error(`Parsing damage failed\nhtml:\n${html}`);
     const {base, perLevel, multiplier} = match.groups;
@@ -86,7 +92,7 @@ export function parseDamage(html: string) {
 }
 
 export function parseAttackProgression(html: string) {
-    const regex = /Progression:.*>(?<progression>(?:0?\.?\d\/?)+)/i;
+    const regex = /Progression:.*?>(?<progression>(?:0?\.?\d\/?)+)/i;
     const match = regex.exec(html);
     if (!match) throw new Error(`Parsing attack progression failed\nhtml:\n${html}`);
     const progression = match.groups.progression.split('/');
@@ -103,7 +109,7 @@ export function parseAttackSpeed(html: string) {
 }
 
 export function parseMoveSpeed(html:string): number {
-    const regex = /Speed:.*>(?<speed>\d+\.?\d*)/i;
+    const regex = /Speed:.*?>(?<speed>\d+\.?\d*)/i;
     const match = regex.exec(html);
     if (!match) throw new Error(`Could not parse move speed from:\n${html}`);
     const speed = match.groups.speed;
@@ -111,7 +117,7 @@ export function parseMoveSpeed(html:string): number {
 }
 
 export function parseRange(html): number {
-    const regex = /Range:.*>(?<range>\d+\.?\d*)/i;
+    const regex = /Range:.*?>(?<range>\d+\.?\d*)/i;
     const match = regex.exec(html);
     if (!match) throw new Error(`Could not parse range from:\n${html}`);
     const range = match.groups.range;
