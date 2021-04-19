@@ -3,6 +3,7 @@ import StatBlock from "smite-timeline/src/data_objects/StatBlock";
 
 
 export default function parseGod(html: string): God {
+    html = html.replace(/(\r?\n|\r)/gm, "");
     const name = parseName(html);
     const { base: baseHealth, perLevel: perLevelHealth } = parseStat(html, 'Health');
     const { base: baseMana, perLevel: perLevelMana } = parseStat(html, 'Mana');
@@ -51,7 +52,7 @@ export default function parseGod(html: string): God {
     return god;
 }
 
-export function parseImageURL(html: string) {
+export function parseImageURL(html: string): string {
     const regex = /<img.*?src="(.*?)"/i;
     const match = regex.exec(html);
     if (!match) throw new Error(`Could not read image URL from html:\n${html}`);

@@ -6,8 +6,6 @@ import parseGod from './parseGod';
 import axios, { AxiosResponse } from 'axios';
 import God from 'smite-timeline/src/data_objects/God';
 import Item from 'smite-timeline/src/data_objects/Item';
-import { resolve } from 'path';
-import { rejects } from 'assert';
 import parseItem from './parseItem';
 
 //Webscraper Main Entrypoint

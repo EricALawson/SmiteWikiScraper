@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Emperor's Armor - Official SMITE Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Emperor's_Armor","wgTitle":"Emperor's Armor","wgCurRevisionId":512203,"wgRevisionId":512203,"wgArticleId":55211,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tier 3 items","Defensive items","Utility items","Health items","Physical Protection items","Aura items"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Emperor's_Armor","wgRelevantArticleId":55211,"wgRequestId":"16655262c3fd6f8e","wgCSPNonce":false,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoExternals":false,"wgArticleInterlangList":[],"wikiaPageType":"article","wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":false},"wgCargoMapClusteringMinimum":80,"wgCargoMonthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgCargoWeekDays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"wgCargoWeekDaysShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"nearby":false,"watchlist":false,"tagline":false},"wgCollapsibleVectorEnabledModules":{"collapsiblenav":true,"experiments":true},"egMapsScriptPath":"/extensions/Maps/","egMapsDebugJS":false,"egMapsAvailableServices":["leaflet","googlemaps3"],"egMapsLeafletLayersApiKeys":{"MapBox":"","MapQuestOpen":"","Thunderforest":"","GeoportailFrance":""},"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false,"wgCodeMirrorEnabled":true,"egFacebookAppId":"112328095453510","comscoreKeyword":"wikiacsid_games","quantcastLabels":"","wgBlankImgUrl":"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D","disclaimerMessage":"Fandom may earn an affiliate commission on sales made from links on this page.","wgEnableDiscussions":false,"viewTrackUrlPrefix":"https://beacon.wikia-services.com/__track/view?c=2294516\u0026lc=en\u0026lid=75\u0026x=smite_gamepedia\u0026s=hydradark\u0026mobile_theme=gamepedia-dark\u0026rollout_tracking=ucp","wgPerformanceMonitoringSamplingFactor":10,"wgPerformanceMonitoringEndpointUrl":"https://beacon.wikia-services.com/__track/special/performance_metrics?w=2294516\u0026lc=en\u0026d=smite_gamepedia\u0026s=hydradark\u0026u=0\u0026i=sjc-prod\u0026a=https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor","wgSoftwareVersion":"release-171.003@release-171.003\n"});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.fandom.AffiliateService.runtime":"ready","ext.fandom.bannerNotifications.css":"ready","ext.fandom.DesignSystem.css":"ready","ext.fandom.UserPreferencesV2.runtime.css":"ready","ext.fandom.CreatePage.css":"ready","ext.fandom.ArticleInterlang.css":"ready","skin.hydra.css":"ready","skins.hydra.runtime.styles":"ready","skins.vector.styles.responsive":"ready","ext.social.styles":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","skins.z.hydra.light.styles":"ready","skins.hydra.googlefont.styles":"ready","skins.hydra.netbar":"ready","skins.hydra.footer":"ready","skins.hydra.advertisements.styles":"ready","skins.z.hydra.dark.styles":"ready","skins.z.hydra.dark.syntaxhighlight.monokai.styles":"ready"});mw.loader.implement("user.tokens@0tffind",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});RLPAGEMODULES=["site","mediawiki.page.startup","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.searchSuggest","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.fandom.FacebookTags.js","ext.fandom.ae.babTracking.js","ext.fandom.ae.consentQueue.js","ext.fandom.AnalyticsEngine.comscore.js","ext.fandom.AnalyticsEngine.quantcast.js","ext.fandom.AffiliateService.js","ext.fandom.bannerNotifications.js","ext.fandom.HeartbeatTracking.js","ext.fandom.Track.pageview.js","ext.fandom.SeoRedlinks.anchors.js","ext.fandom.CreatePage.js","ext.claimWiki.styles","ext.collapsiblevector.collapsibleNav","ext.gadget.CountdownRL","ext.gadget.Tooltip","ext.fandom.WikiaInYourLang.js","ext.fandom.performanceMonitoring.js","ext.fandom.GalleryTracking.js","skins.vector.js","skins.hydra.advertisements.js","skins.hydra.footer.js","ext.social.scripts"];mw.loader.load(RLPAGEMODULES);});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=ext.fandom.AffiliateService.runtime%7Cext.fandom.ArticleInterlang.css%7Cext.fandom.CreatePage.css%7Cext.fandom.DesignSystem.css%7Cext.fandom.UserPreferencesV2.runtime.css%7Cext.fandom.bannerNotifications.css%7Cext.social.styles%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cskin.hydra.css%7Cskins.hydra.advertisements.styles%7Cskins.hydra.footer%2Cnetbar%7Cskins.hydra.googlefont.styles%7Cskins.hydra.runtime.styles%7Cskins.vector.styles%7Cskins.vector.styles.responsive%7Cskins.z.hydra.dark.styles%7Cskins.z.hydra.dark.syntaxhighlight.monokai.styles%7Cskins.z.hydra.light.styles&amp;only=styles&amp;skin=hydradark"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;skin=hydradark"></script>
+<link rel="stylesheet" href="https://static.wikia.nocookie.net/fandom-ae-assets/platforms/v81.7.1/ucp-hydra/styles.css"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=hydradark"/>
+<meta name="generator" content="MediaWiki 1.33.3"/>
+<meta name="description" content="Stats +250 Health+60 Physical Protection Passive Effect Damageable enemy structures within 55 units have their Attack Speed reduced by 30%.Damageable allied structures within 55 units have their Attack Speed increased by 40%. Emperor&#039;s Armor is one of the Items in SMITE. The auras from multiple..."/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@getfandom"/>
+<meta name="twitter:url" content="https://smite.gamepedia.com/Emperor%27s_Armor"/>
+<meta name="twitter:title" content="Emperor&#039;s Armor - Official SMITE Wiki"/>
+<meta name="twitter:description" content="Emperor&#039;s Armor - Official SMITE Wiki"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/Emperor%27s_Armor?action=edit"/>
+<link rel="edit" title="Edit" href="/Emperor%27s_Armor?action=edit"/>
+<link rel="shortcut icon" href="https://static.wikia.nocookie.net/smite_gamepedia/images/6/64/Favicon.ico/revision/latest?cb=20140813233317"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Smite Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://smite.gamepedia.com/api.php?action=rsd"/>
+<link rel="license" href="https://www.fandom.com/licensing"/>
+<link rel="alternate" type="application/atom+xml" title="Smite Wiki Atom feed" href="/Special:RecentChanges?feed=atom"/>
+<link rel="canonical" href="https://smite.gamepedia.com/Emperor%27s_Armor"/>
+	<meta property="fb:app_id" content="112328095453510" prefix="fb: http://www.facebook.com/2008/fbml"/>
+
+	<meta property="og:type" content="article"/>
+
+	<meta property="og:site_name" content="Smite Wiki"/>
+
+	<meta property="og:title" content="Emperor&#039;s Armor"/>
+
+	<meta property="og:description" content="Stats +250 Health+60 Physical Protection Passive Effect Damageable enemy structures within 55 units have their Attack Speed reduced by 30%.Damageable allied structures within 55 units have their Attack Speed increased by 40%. Emperor&#039;s Armor is one of the Items in SMITE. The auras from multiple Emperor&#039;s Armors do not stack. This item is disabled in the Arena game mode. RelicsStandardUpgradedStartersTier IIPassiveTier IITier III"/>
+
+	<meta property="og:url" content="https://smite.gamepedia.com/Emperor%27s_Armor"/>
+
+	<meta property="og:image" content="https://static.wikia.nocookie.net/smite_gamepedia/images/b/bc/Wiki.png/revision/latest/scale-to-width-down/200?cb=20150502200552"/>
+
+<script>var ads={"context":{"opts":{"adEngineVersion":"v81.7.1","enableCheshireCat":true,"isGamepedia":true,"pageType":"all_ads","platformName":"gamepedia","showAds":true},"targeting":{"enablePageCategories":true,"esrbRating":"teen","isUcp":true,"mappedVerticalName":"gaming","pageArticleId":55211,"pageIsArticle":true,"pageName":"Emperor's_Armor","pageType":"article","wikiDbName":"smite_gamepedia","wikiId":2294516,"wikiLanguage":"en","wikiVertical":"games"}},"consentQueue":[]};</script>
+<script src="https://static.wikia.nocookie.net/fandom-ae-assets/platforms/v81.7.1/ucp-hydra/main.bundle.js" defer=""></script>
+<!-- Fandom Beacon Tracking -->
+<script>
+    window.RLQ = window.RLQ || [];
+
+    window.RLQ.push(function () {
+        function genUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+
+                return v.toString(16);
+            });
+        }
+
+        function getCookieValue(cookieName) {
+            var cookieSplit = ('; ' + document.cookie).split('; ' + cookieName + '=');
+
+            return cookieSplit.length === 2 ? cookieSplit.pop().split(';').shift() : null;
+        }
+
+        var beacon = getCookieValue('wikia_beacon_id');
+        var sessionId = getCookieValue('tracking_session_id');
+        var pvNumber = getCookieValue('pv_number');
+        var pvNumberGlobal = getCookieValue('pv_number_global');
+        var expireDate = new Date(Date.now() + 1000 * 60 * 30);
+
+        mw.config.set({
+            sessionId: sessionId ? sessionId : genUID(),
+            pvNumber: pvNumber ? parseInt(pvNumber, 10) + 1 : 1,
+            pvNumberGlobal: pvNumberGlobal ? parseInt(pvNumberGlobal, 10) + 1 : 1,
+            pvUID: genUID(),
+            beaconId: beacon
+        });
+
+        document.cookie = 'tracking_session_id=' + mw.config.get('sessionId') + '; expires=' + expireDate.toGMTString() +
+                ';domain=' + mw.config.get('wgCookieDomain') + '; path=' + mw.config.get('wgCookiePath') + ';';
+        document.cookie = 'pv_number=' + mw.config.get('pvNumber') + '; expires=' + expireDate.toGMTString() +
+                '; path=' + mw.config.get('wgScriptPath') + ';';
+        document.cookie = 'pv_number_global=' + mw.config.get('pvNumberGlobal') + '; expires=' + expireDate.toGMTString() +
+                ';domain=' + mw.config.get('wgCookieDomain') + '; path=' + mw.config.get('wgCookiePath') + ';';
+    });
+</script>
+
+<!--[if lt IE 9]><script src="/load.php?lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=hydradark&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Emperor_s_Armor rootpage-Emperor_s_Armor skin-hydradark action-view ooui-theme-fandom wiki-smite_gamepedia site-smite-gamepedia show-ads">	<script type="text/javascript">
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}
+
+			, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-39967852-75', 'auto', 'tracker0', []);
+
+		if (window.cdnprovider) {
+			ga(
+				'tracker0.send',
+				'pageview',
+				{
+					'dimension1':  window.cdnprovider
+				}
+			);
+		} else {
+			ga('tracker0.send', 'pageview');
+		}
+
+	</script>
+
+<div id="netbar">
+	<div class="netbar-flex">
+		<div class="netbar-box left logo"><a href="https://www.gamepedia.com">Gamepedia</a></div>
+				<div class="netbar-box left"><a href="https://support.gamepedia.com/">Help</a></div>
+												<div class="netbar-box left officialwiki"><a href="/index.php?title=Special:AllSites&amp;filter=official"><img src="/skins-ucp/Hydra/images/netbar/official-wiki.svg" width="90"></a></div>
+						<div class="netbar-spacer">&nbsp;</div>
+						<div class="netbar-box right"><a href="/Special:UserLogin?returnto=Emperor%27s+Armor" id="login-link" class="aqua-link">Sign In</a></div>
+					<div class="netbar-box right"><a href="/Special:CreateAccount" id="register-link" class="aqua-link">Register</a></div>
+						</div>
+</div>
+	<div id="global-wrapper" class="with-siderail">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="pageWrapper">
+			<div id="content" class="mw-body" role="main" itemprop="articleBody">
+				<a id="top"></a>
+				<div class="banner-notifications-placeholder">
+					<div class="wds-banner-notification__container">
+	
+</div>
+				</div>
+				<div class="mw-indicators mw-body-content">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en" itemprop="name">Emperor's Armor</h1>				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub" class="noprint">From Smite Wiki</div>					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">
+						Jump to:						<a href="#mw-head">navigation</a>, 						<a href="#p-search">search</a>
+					</div>
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="mw-parser-output"><table class="infobox">
+
+<tbody><tr>
+<th colspan="2" class="title">Emperor's Armor
+</th></tr>
+<tr>
+<td colspan="2" style="text-align: center;"><a href="/File:EmperorsArmor_T3.png" class="image"><img alt="EmperorsArmor T3.png" src="https://static.wikia.nocookie.net/smite_gamepedia/images/7/78/EmperorsArmor_T3.png/revision/latest/scale-to-width-down/128?cb=20160706104440" decoding="async" width="128" height="128" /></a>
+</td></tr>
+<tr>
+<th colspan="2" class="header">Details
+</th></tr>
+<tr style="">
+<th style="width: 70px">Item Type:
+</th>
+<td>Defensive, Utility
+</td></tr>
+<tr style="">
+<th>Item Tier:
+</th>
+<td>Tier 3
+</td></tr>
+<tr style="">
+<th>Cost:
+</th>
+<td style="color:gold;">600
+</td></tr>
+<tr style="">
+<th>Total Cost:
+</th>
+<td style="color:gold;">2000
+</td></tr>
+<tr style="">
+<th>Stats:
+</th>
+<td>+250 Health <br />+60 Physical Protection
+</td></tr>
+<tr style="display: none;">
+<th>Active Effect:
+</th>
+<td>
+</td></tr>
+<tr style="">
+<th>Passive Effect:
+</th>
+<td>Damageable enemy structures within 55 units have their Attack Speed reduced by 30%.<br />Damageable allied structures within 55 units have their Attack Speed increased by 40%.
+</td></tr>
+<tr style="display: none;">
+<th>Active Cooldown:
+</th>
+<td>
+</td></tr>
+<tr style="display: none;">
+<th>Passive Cooldown:
+</th>
+<td>
+</td></tr></tbody></table><div style="display:none;" class="tooltip tooltip-content"><div class="skill-tooltip"><ul>
+<li class="skill-tooltip-header"><a href="/File:EmperorsArmor_T3.png" class="image"><img alt="EmperorsArmor T3.png" src="https://static.wikia.nocookie.net/smite_gamepedia/images/7/78/EmperorsArmor_T3.png/revision/latest/scale-to-width-down/32?cb=20160706104440" decoding="async" width="32" height="32" /></a> <b>Emperor's Armor</b> <div style="float:right;"><span style="color:gold;">600</span>&#160;(<span style="color:gold;">2000</span>)</div></li>
+<li class="skill-tooltip-stats"><b>Stats</b></li>
+<li class="skill-tooltip-statsdesc">+250 Health<br />+60 Physical Protection</li>
+
+
+<li class="skill-tooltip-stats"><b>Passive Effect</b></li>
+<li class="skill-tooltip-statsdesc">Damageable enemy structures within 55 units have their Attack Speed reduced by 30%.<br />Damageable allied structures within 55 units have their Attack Speed increased by 40%.</li>
+
+</ul></div></div>
+<p><b>Emperor's Armor</b> is one of the <a href="/Items" title="Items">Items</a> in <a href="/SMITE" title="SMITE">SMITE</a>.
+</p>
+<h2><span class="mw-headline" id="Tiers">Tiers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/Emperor%27s_Armor?veaction=edit&amp;section=1" class="mw-editsection-visualeditor" title="Edit section: Tiers">edit</a><span class="mw-editsection-divider"> | </span><a href="/Emperor%27s_Armor?action=edit&amp;section=1" title="Edit section: Tiers">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="wikitable" style="text-align:center">
+
+<tbody><tr class="prettytable">
+<th style="width: 96px">Item
+</th>
+<th style="width: 80px">Cost /<br />Total Cost
+</th>
+<th style="width: 176px">Stats
+</th>
+<th style="width: 648px">Passive Effect
+</th></tr>
+<tr>
+<td><a href="/Iron_Mail" title="Iron Mail"><img alt="IronMail T1.png" src="https://static.wikia.nocookie.net/smite_gamepedia/images/e/e6/IronMail_T1.png/revision/latest/scale-to-width-down/64?cb=20140927161215" decoding="async" width="64" height="64" /></a><br /><span class="nobreak"><a href="/Iron_Mail" title="Iron Mail"><span class="ajaxttlink">Iron Mail</span></a></span>
+</td>
+<td><span style="color:gold;">650</span>
+</td>
+<td align="left">+75 Health<br />+10 Physical Protection
+</td>
+<td align="left">None
+</td></tr>
+<tr>
+<td><a href="/Steel_Mail" title="Steel Mail"><img alt="SteelMail T2.png" src="https://static.wikia.nocookie.net/smite_gamepedia/images/c/c8/SteelMail_T2.png/revision/latest/scale-to-width-down/64?cb=20140927161248" decoding="async" width="64" height="64" /></a><br /><span class="nobreak"><a href="/Steel_Mail" title="Steel Mail"><span class="ajaxttlink">Steel Mail</span></a></span>
+</td>
+<td><span style="color:gold;">750<br />(1400)</span>
+</td>
+<td align="left">+200 Health<br />+20 Physical Protection
+</td>
+<td align="left">None
+</td></tr>
+<tr>
+<td><a href="/Emperor%27s_Armor" title="Emperor&#39;s Armor"><img alt="EmperorsArmor T3.png" src="https://static.wikia.nocookie.net/smite_gamepedia/images/7/78/EmperorsArmor_T3.png/revision/latest/scale-to-width-down/64?cb=20160706104440" decoding="async" width="64" height="64" /></a><br /><span class="nobreak"><strong class="mw-selflink selflink"><span class="ajaxttlink">Emperor's Armor</span></strong></span>
+</td>
+<td><span style="color:gold;">600<br />(2000)</span>
+</td>
+<td align="left">+250 Health<br />+60 Physical Protection
+</td>
+<td align="left">AURA - Damageable enemy structures within 55 units have their Attack Speed reduced by 30%.<br />Damageable allied structures within 55 units have their Attack Speed increased by 40%.
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/Emperor%27s_Armor?veaction=edit&amp;section=2" class="mw-editsection-visualeditor" title="Edit section: Notes">edit</a><span class="mw-editsection-divider"> | </span><a href="/Emperor%27s_Armor?action=edit&amp;section=2" title="Edit section: Notes">edit source</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>The auras from multiple Emperor's Armors do not stack.</li>
+<li>This item is disabled in the <a href="/Arena" title="Arena">Arena</a> game mode.</li></ul>
+<p><br />
+</p>
+<table class="navbox" cellspacing="0" style=";"><tbody><tr><td style="padding:2px;"><table cellspacing="0" class="nowraplinks mw-collapsible mw-autocollapse" style="width:100%;background:transparent;color:inherit;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><th style=";" colspan="2" class="navbox-title"><span style="float:left;width:6em;text-align:left;"><div class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;;;background:none transparent;border:none;font-size:100%;; font-size:small;"><a target="_blank" rel="noreferrer noopener" class="external text" href="https://smite.gamepedia.com/Template:Item_nav"><span title="View this template" style=";;background:none transparent;border:none;font-size:100%;">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a target="_blank" rel="noreferrer noopener" class="external text" href="https://smite.gamepedia.com/Template_talk:Item_nav"><span title="Discuss this template" style=";;background:none transparent;border:none;font-size:100%;">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a target="_blank" rel="noreferrer noopener" class="external text" href="https://smite.gamepedia.com/Template:Item_nav?action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;font-size:100%;;">e</span></a></div></span><span class="" style="font-size:110%;"><a href="/Items" title="Items"><span style="color: #d6b68f; font-size: 130%; padding-left: 5px;">Items</span></a></span></th></tr><tr style="height:2px;"><td></td></tr><tr><td class="navbox-group" style=";;"><a href="/Items#Consumable_items" title="Items"><span style="color: #FFFFFF; font-size: 120%; padding-left: 5px;"><b>Consumables</b></span></a></td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Baba%27s_Brew" title="Baba&#39;s Brew"><span class="ajaxttlink">Baba's Brew</span></a></span></li>
+<li><span class="nobreak"><a href="/Healing_Potion" title="Healing Potion"><span class="ajaxttlink">Healing Potion</span></a></span></li>
+<li><span class="nobreak"><a href="/Mana_Potion" title="Mana Potion"><span class="ajaxttlink">Mana Potion</span></a></span></li>
+<li><span class="nobreak"><a href="/Multi_Potion" title="Multi Potion"><span class="ajaxttlink">Multi Potion</span></a></span></li>
+<li><span class="nobreak"><a href="/Ward" title="Ward"><span class="ajaxttlink">Ward</span></a></span></li>
+<li><span class="nobreak"><a href="/Hand_of_the_Gods" title="Hand of the Gods"><span class="ajaxttlink">Hand of the Gods</span></a></span></li>
+<li><span class="nobreak"><a href="/Sentry_Ward" title="Sentry Ward"><span class="ajaxttlink">Sentry Ward</span></a></span></li>
+<li><span class="nobreak"><a href="/Baron%27s_Brew" title="Baron&#39;s Brew"><span class="ajaxttlink">Baron's Brew</span></a></span></li>
+<li><span class="nobreak"><a href="/Chalice_of_Healing" title="Chalice of Healing"><span class="ajaxttlink">Chalice of Healing</span></a></span></li>
+<li><span class="nobreak"><a href="/Chalice_of_Mana" title="Chalice of Mana"><span class="ajaxttlink">Chalice of Mana</span></a></span></li>
+<li><span class="nobreak"><a href="/Chalice_of_the_Oracle" title="Chalice of the Oracle"><span class="ajaxttlink">Chalice of the Oracle</span></a></span></li>
+<li><span class="nobreak"><a href="/Potion_of_Power" title="Potion of Power"><span class="ajaxttlink">Potion of Power</span></a></span></li>
+<li><span class="nobreak"><a href="/Elixir_of_Speed" title="Elixir of Speed"><span class="ajaxttlink">Elixir of Speed</span></a></span></li>
+<li><span class="nobreak"><a href="/Elixir_of_Defense" title="Elixir of Defense"><span class="ajaxttlink">Elixir of Defense</span></a></span></li>
+<li><span class="nobreak"><a href="/Elixir_of_Power" title="Elixir of Power"><span class="ajaxttlink">Elixir of Power</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;"><a href="/Items#Relics" title="Items"><span style="color: #FFFFFF; font-size: 120%; padding-left: 5px;"><b>Relics</b></span></a></td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td class="navbox-group" style=";;">Base</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Relic" title="Relic"><span class="ajaxttlink">Relic</span></a></span></li>
+<li><span class="nobreak"><a href="/Vision_Shard" title="Vision Shard"><span class="ajaxttlink">Vision Shard</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;">Standard</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Aegis_Amulet" title="Aegis Amulet"><span class="ajaxttlink">Aegis Amulet</span></a></span></li>
+<li><span class="nobreak"><a href="/Belt_of_Frenzy" title="Belt of Frenzy"><span class="ajaxttlink">Belt of Frenzy</span></a></span></li>
+<li><span class="nobreak"><a href="/Blink_Rune" title="Blink Rune"><span class="ajaxttlink">Blink Rune</span></a></span></li>
+<li><span class="nobreak"><a href="/Bracer_of_Undoing" title="Bracer of Undoing"><span class="ajaxttlink">Bracer of Undoing</span></a></span></li>
+<li><span class="nobreak"><a href="/Cursed_Ankh" title="Cursed Ankh"><span class="ajaxttlink">Cursed Ankh</span></a></span></li>
+<li><span class="nobreak"><a href="/Heavenly_Wings" title="Heavenly Wings"><span class="ajaxttlink">Heavenly Wings</span></a></span></li>
+<li><span class="nobreak"><a href="/Horrific_Emblem" title="Horrific Emblem"><span class="ajaxttlink">Horrific Emblem</span></a></span></li>
+<li><span class="nobreak"><a href="/Magic_Shell" title="Magic Shell"><span class="ajaxttlink">Magic Shell</span></a></span></li>
+<li><span class="nobreak"><a href="/Meditation_Cloak" title="Meditation Cloak"><span class="ajaxttlink">Meditation Cloak</span></a></span></li>
+<li><span class="nobreak"><a href="/Phantom_Veil" title="Phantom Veil"><span class="ajaxttlink">Phantom Veil</span></a></span></li>
+<li><span class="nobreak"><a href="/Purification_Beads" title="Purification Beads"><span class="ajaxttlink">Purification Beads</span></a></span></li>
+<li><span class="nobreak"><a href="/Shield_of_Thorns" title="Shield of Thorns"><span class="ajaxttlink">Shield of Thorns</span></a></span></li>
+<li><span class="nobreak"><a href="/Sundering_Spear" title="Sundering Spear"><span class="ajaxttlink">Sundering Spear</span></a></span></li>
+<li><span class="nobreak"><a href="/Teleport_Glyph" title="Teleport Glyph"><span class="ajaxttlink">Teleport Glyph</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;">Upgraded</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Aegis_Amulet_Upgrade" title="Aegis Amulet Upgrade"><span class="ajaxttlink">Aegis Amulet Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Belt_of_Frenzy_Upgrade" title="Belt of Frenzy Upgrade"><span class="ajaxttlink">Belt of Frenzy Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Blink_Rune_Upgrade" title="Blink Rune Upgrade"><span class="ajaxttlink">Blink Rune Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Bracer_of_Undoing_Upgrade" title="Bracer of Undoing Upgrade"><span class="ajaxttlink">Bracer of Undoing Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Cursed_Ankh_Upgrade" title="Cursed Ankh Upgrade"><span class="ajaxttlink">Cursed Ankh Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Heavenly_Wings_Upgrade" title="Heavenly Wings Upgrade"><span class="ajaxttlink">Heavenly Wings Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Horrific_Emblem_Upgrade" title="Horrific Emblem Upgrade"><span class="ajaxttlink">Horrific Emblem Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Magic_Shell_Upgrade" title="Magic Shell Upgrade"><span class="ajaxttlink">Magic Shell Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Meditation_Cloak_Upgrade" title="Meditation Cloak Upgrade"><span class="ajaxttlink">Meditation Cloak Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Phantom_Veil_Upgrade" title="Phantom Veil Upgrade"><span class="ajaxttlink">Phantom Veil Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Purification_Beads_Upgrade" title="Purification Beads Upgrade"><span class="ajaxttlink">Purification Beads Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Shield_of_Thorns_Upgrade" title="Shield of Thorns Upgrade"><span class="ajaxttlink">Shield of Thorns Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Sundering_Spear_Upgrade" title="Sundering Spear Upgrade"><span class="ajaxttlink">Sundering Spear Upgrade</span></a></span></li>
+<li><span class="nobreak"><a href="/Teleport_Glyph_Upgrade" title="Teleport Glyph Upgrade"><span class="ajaxttlink">Teleport Glyph Upgrade</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;"><a href="/Items#Starter_items" title="Items"><span style="color: #FFFFFF; font-size: 120%; padding-left: 5px;"><b>Starters</b></span></a></td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td class="navbox-group" style=";;">Tier I</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Sentinel%27s_Gift" title="Sentinel&#39;s Gift"><span class="ajaxttlink">Sentinel's Gift</span></a></span></li>
+<li><span class="nobreak"><a href="/Benevolence" title="Benevolence"><span class="ajaxttlink">Benevolence</span></a></span></li>
+<li><span class="nobreak"><a href="/Bumba%27s_Dagger" title="Bumba&#39;s Dagger"><span class="ajaxttlink">Bumba's Dagger</span></a></span></li>
+<li><span class="nobreak"><a href="/War_Flag" title="War Flag"><span class="ajaxttlink">War Flag</span></a></span></li>
+<li><span class="nobreak"><a href="/Warrior%27s_Axe" title="Warrior&#39;s Axe"><span class="ajaxttlink">Warrior's Axe</span></a></span></li>
+<li><span class="nobreak"><a href="/Eye_of_the_Jungle" title="Eye of the Jungle"><span class="ajaxttlink">Eye of the Jungle</span></a></span></li>
+<li><span class="nobreak"><a href="/Conduit_Gem" title="Conduit Gem"><span class="ajaxttlink">Conduit Gem</span></a></span></li>
+<li><span class="nobreak"><a href="/Gilded_Arrow" title="Gilded Arrow"><span class="ajaxttlink">Gilded Arrow</span></a></span></li>
+<li><span class="nobreak"><a href="/Leather_Cowl" title="Leather Cowl"><span class="ajaxttlink">Leather Cowl</span></a></span></li>
+<li><span class="nobreak"><a href="/Warding_Sigil" title="Warding Sigil"><span class="ajaxttlink">Warding Sigil</span></a></span></li>
+<li><span class="nobreak"><a href="/Death%27s_Toll" title="Death&#39;s Toll"><span class="ajaxttlink">Death's Toll</span></a></span></li>
+<li><span class="nobreak"><a href="/Manikin_Scepter" title="Manikin Scepter"><span class="ajaxttlink">Manikin Scepter</span></a></span></li>
+<li><span class="nobreak"><a href="/Tainted_Steel" title="Tainted Steel"><span class="ajaxttlink">Tainted Steel</span></a></span></li>
+<li><span class="nobreak"><a href="/Bluestone_Pendant" title="Bluestone Pendant"><span class="ajaxttlink">Bluestone Pendant</span></a></span></li>
+<li><span class="nobreak"><a href="/Sands_of_Time" title="Sands of Time"><span class="ajaxttlink">Sands of Time</span></a></span></li>
+<li><span class="nobreak"><a href="/Vampiric_Shroud" title="Vampiric Shroud"><span class="ajaxttlink">Vampiric Shroud</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;">Tier II</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Sentinel%27s_Boon" title="Sentinel&#39;s Boon"><span class="ajaxttlink">Sentinel's Boon</span></a></span></li>
+<li><span class="nobreak"><a href="/Sentinel%27s_Embrace" title="Sentinel&#39;s Embrace"><span class="ajaxttlink">Sentinel's Embrace</span></a></span></li>
+<li><span class="nobreak"><a href="/Animosity" title="Animosity"><span class="ajaxttlink">Animosity</span></a></span></li>
+<li><span class="nobreak"><a href="/Bumba%27s_Hammer" title="Bumba&#39;s Hammer"><span class="ajaxttlink">Bumba's Hammer</span></a></span></li>
+<li><span class="nobreak"><a href="/Bumba%27s_Spear" title="Bumba&#39;s Spear"><span class="ajaxttlink">Bumba's Spear</span></a></span></li>
+<li><span class="nobreak"><a href="/Compassion" title="Compassion"><span class="ajaxttlink">Compassion</span></a></span></li>
+<li><span class="nobreak"><a href="/Hero%27s_Axe" title="Hero&#39;s Axe"><span class="ajaxttlink">Hero's Axe</span></a></span></li>
+<li><span class="nobreak"><a href="/Spartan_Flag" title="Spartan Flag"><span class="ajaxttlink">Spartan Flag</span></a></span></li>
+<li><span class="nobreak"><a href="/Sundering_Axe" title="Sundering Axe"><span class="ajaxttlink">Sundering Axe</span></a></span></li>
+<li><span class="nobreak"><a href="/War_Banner" title="War Banner"><span class="ajaxttlink">War Banner</span></a></span></li>
+<li><span class="nobreak"><a href="/Protector_of_the_Jungle" title="Protector of the Jungle"><span class="ajaxttlink">Protector of the Jungele</span></a></span></li>
+<li><span class="nobreak"><a href="/Seer_of_the_Jungle" title="Seer of the Jungle"><span class="ajaxttlink">Seer of the Jungele</span></a></span></li>
+<li><span class="nobreak"><a href="/Archmage%27s_Gem" title="Archmage&#39;s Gem"><span class="ajaxttlink">Archmage's Gem</span></a></span></li>
+<li><span class="nobreak"><a href="/Diamond_Arrow" title="Diamond Arrow"><span class="ajaxttlink">Diamond Arrow</span></a></span></li>
+<li><span class="nobreak"><a href="/Gem_of_Focus" title="Gem of Focus"><span class="ajaxttlink">Gem of Focus</span></a></span></li>
+<li><span class="nobreak"><a href="/Hunter%27s_Cowl" title="Hunter&#39;s Cowl"><span class="ajaxttlink">Hunter's Cowl</span></a></span></li>
+<li><span class="nobreak"><a href="/Infused_Sigil" title="Infused Sigil"><span class="ajaxttlink">Infused Sigil</span></a></span></li>
+<li><span class="nobreak"><a href="/Leader%27s_Cowl" title="Leader&#39;s Cowl"><span class="ajaxttlink">Leader's Cowl</span></a></span></li>
+<li><span class="nobreak"><a href="/Ornate_Arrow" title="Ornate Arrow"><span class="ajaxttlink">Ornate Arrow</span></a></span></li>
+<li><span class="nobreak"><a href="/Sigil_of_the_Old_Guard" title="Sigil of the Old Guard"><span class="ajaxttlink">Sigil of the Old Guard</span></a></span></li>
+<li><span class="nobreak"><a href="/Death%27s_Embrace" title="Death&#39;s Embrace"><span class="ajaxttlink">Death's Embrace</span></a></span></li>
+<li><span class="nobreak"><a href="/Death%27s_Temper" title="Death&#39;s Temper"><span class="ajaxttlink">Death's Temper</span></a></span></li>
+<li><span class="nobreak"><a href="/Manikin_Hidden_Blade" title="Manikin Hidden Blade"><span class="ajaxttlink">Manikin Hidden Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Manikin_Mace" title="Manikin Mace"><span class="ajaxttlink">Manikin Mace</span></a></span></li>
+<li><span class="nobreak"><a href="/Tainted_Amulet" title="Tainted Amulet"><span class="ajaxttlink">Tainted Amulet</span></a></span></li>
+<li><span class="nobreak"><a href="/Tainted_Breastplate" title="Tainted Breastplate"><span class="ajaxttlink">Tainted Breastplate</span></a></span></li>
+<li><span class="nobreak"><a href="/Bluestone_Brooch" title="Bluestone Brooch"><span class="ajaxttlink">Bluestone Brooch</span></a></span></li>
+<li><span class="nobreak"><a href="/Corrupted_Bluestone" title="Corrupted Bluestone"><span class="ajaxttlink">Corrupted Bluestone</span></a></span></li>
+<li><span class="nobreak"><a href="/Pendulum_of_Ages" title="Pendulum of Ages"><span class="ajaxttlink">Pendulum of Ages</span></a></span></li>
+<li><span class="nobreak"><a href="/The_Alternate_Timeline" title="The Alternate Timeline"><span class="ajaxttlink">The Alternate Timeline</span></a></span></li>
+<li><span class="nobreak"><a href="/Blood-soaked_Shroud" title="Blood-soaked Shroud"><span class="ajaxttlink">Blood-soaked Shroud</span></a></span></li>
+<li><span class="nobreak"><a href="/Sacrificial_Shroud" title="Sacrificial Shroud"><span class="ajaxttlink">Sacrificial Shroud</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;"><a href="/Items#Passive_items" title="Items"><span style="color: #FFFFFF; font-size: 120%; padding-left: 5px;"><b>Passive</b></span></a></td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td class="navbox-group" style=";;">Tier I</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Magic_Acorn" title="Magic Acorn"><span class="ajaxttlink">Magic Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Boots" title="Boots"><span class="ajaxttlink">Boots</span></a></span></li>
+<li><span class="nobreak"><a href="/Mask" title="Mask"><span class="ajaxttlink">Mask</span></a></span></li>
+<li><span class="nobreak"><a href="/Shoes" title="Shoes"><span class="ajaxttlink">Shoes</span></a></span></li>
+<li><span class="nobreak"><a href="/Ancient_Blade" title="Ancient Blade"><span class="ajaxttlink">Ancient Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Lost_Artifact" title="Lost Artifact"><span class="ajaxttlink">Lost Artifact</span></a></span></li>
+<li><span class="nobreak"><a href="/Tiny_Trinket" title="Tiny Trinket"><span class="ajaxttlink">Tiny Trinket</span></a></span></li>
+<li><span class="nobreak"><a href="/Breastplate" title="Breastplate"><span class="ajaxttlink">Breastplate</span></a></span></li>
+<li><span class="nobreak"><a href="/Druid_Stone" title="Druid Stone"><span class="ajaxttlink">Druid Stone</span></a></span></li>
+<li><span class="nobreak"><a href="/Emerald_Ring" title="Emerald Ring"><span class="ajaxttlink">Emerald Ring</span></a></span></li>
+<li><span class="nobreak"><a href="/Glowing_Emerald" title="Glowing Emerald"><span class="ajaxttlink">Glowing Emerald</span></a></span></li>
+<li><span class="nobreak"><a href="/Imperial_Helmet" title="Imperial Helmet"><span class="ajaxttlink">Imperial Helmet</span></a></span></li>
+<li><span class="nobreak"><a href="/Light_Blade" title="Light Blade"><span class="ajaxttlink">Light Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Morningstar" title="Morningstar"><span class="ajaxttlink">Morningstar</span></a></span></li>
+<li><span class="nobreak"><a href="/Spiked_Gauntlet" title="Spiked Gauntlet"><span class="ajaxttlink">Spiked Gauntlet</span></a></span></li>
+<li><span class="nobreak"><a href="/Cloak" title="Cloak"><span class="ajaxttlink">Cloak</span></a></span></li>
+<li><span class="nobreak"><a href="/Cudgel" title="Cudgel"><span class="ajaxttlink">Cudgel</span></a></span></li>
+<li><span class="nobreak"><a href="/Enchanted_Buckler" title="Enchanted Buckler"><span class="ajaxttlink">Enchanted Buckler</span></a></span></li>
+<li><span class="nobreak"><a href="/Enchanted_Kusari" title="Enchanted Kusari"><span class="ajaxttlink">Enchanted Kusari</span></a></span></li>
+<li><span class="nobreak"><a href="/Iron_Mail" title="Iron Mail"><span class="ajaxttlink">Iron Mail</span></a></span></li>
+<li><span class="nobreak"><a href="/Katana" title="Katana"><span class="ajaxttlink">Katana</span></a></span></li>
+<li><span class="nobreak"><a href="/Mace" title="Mace"><span class="ajaxttlink">Mace</span></a></span></li>
+<li><span class="nobreak"><a href="/Magic_Focus" title="Magic Focus"><span class="ajaxttlink">Magic Focus</span></a></span></li>
+<li><span class="nobreak"><a href="/Round_Shield" title="Round Shield"><span class="ajaxttlink">Round Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Short_Bow" title="Short Bow"><span class="ajaxttlink">Short Bow</span></a></span></li>
+<li><span class="nobreak"><a href="/Shuriken" title="Shuriken"><span class="ajaxttlink">Shuriken</span></a></span></li>
+<li><span class="nobreak"><a href="/Spellbook" title="Spellbook"><span class="ajaxttlink">Spellbook</span></a></span></li>
+<li><span class="nobreak"><a href="/Talisman" title="Talisman"><span class="ajaxttlink">Talisman</span></a></span></li>
+<li><span class="nobreak"><a href="/Uncommon_Staff" title="Uncommon Staff"><span class="ajaxttlink">Uncommon Staff</span></a></span></li>
+<li><span class="nobreak"><a href="/Hidden_Dagger" title="Hidden Dagger"><span class="ajaxttlink">Hidden Dagger</span></a></span></li>
+<li><span class="nobreak"><a href="/Gem_of_Fate" title="Gem of Fate"><span class="ajaxttlink">Gem of Fate</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;">Tier II</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Lively_Acorn" title="Lively Acorn"><span class="ajaxttlink">Lively Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Nettle_Acorn" title="Nettle Acorn"><span class="ajaxttlink">Nettle Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Combat_Boots" title="Combat Boots"><span class="ajaxttlink">Combat Boots</span></a></span></li>
+<li><span class="nobreak"><a href="/Magic_Shoes" title="Magic Shoes"><span class="ajaxttlink">Magic Shoes</span></a></span></li>
+<li><span class="nobreak"><a href="/Bound_Gauntlet" title="Bound Gauntlet"><span class="ajaxttlink">Bound Gauntlet</span></a></span></li>
+<li><span class="nobreak"><a href="/Silver_Breastplate" title="Silver Breastplate"><span class="ajaxttlink">Silver Breastplate</span></a></span></li>
+<li><span class="nobreak"><a href="/Enchanted_Trinket" title="Enchanted Trinket"><span class="ajaxttlink">Enchanted Trinket</span></a></span></li>
+<li><span class="nobreak"><a href="/Adventurer%27s_Blade" title="Adventurer&#39;s Blade"><span class="ajaxttlink">Adventurer's Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Cleric%27s_Cloak" title="Cleric&#39;s Cloak"><span class="ajaxttlink">Cleric's Cloak</span></a></span></li>
+<li><span class="nobreak"><a href="/Tower_Shield" title="Tower Shield"><span class="ajaxttlink">Tower Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Warded_Shield" title="Warded Shield"><span class="ajaxttlink">Warded Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Charged_Bow" title="Charged Bow"><span class="ajaxttlink">Charged Bow</span></a></span></li>
+<li><span class="nobreak"><a href="/Charged_Morningstar" title="Charged Morningstar"><span class="ajaxttlink">Charged Morningstar</span></a></span></li>
+<li><span class="nobreak"><a href="/Fighter%27s_Mask" title="Fighter&#39;s Mask"><span class="ajaxttlink">Fighter's Mask</span></a></span></li>
+<li><span class="nobreak"><a href="/Hunter%27s_Bow" title="Hunter&#39;s Bow"><span class="ajaxttlink">Hunter's Bow</span></a></span></li>
+<li><span class="nobreak"><a href="/Hydra%27s_Star" title="Hydra&#39;s Star"><span class="ajaxttlink">Hydra's Star</span></a></span></li>
+<li><span class="nobreak"><a href="/Jade_Mountain_Helm" title="Jade Mountain Helm"><span class="ajaxttlink">Jade Mountain Helm</span></a></span></li>
+<li><span class="nobreak"><a href="/Protector%27s_Mask" title="Protector&#39;s Mask"><span class="ajaxttlink">Protector's Mask</span></a></span></li>
+<li><span class="nobreak"><a href="/Balanced_Blade" title="Balanced Blade"><span class="ajaxttlink">Balanced Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Cursed_Blade" title="Cursed Blade"><span class="ajaxttlink">Cursed Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Emerald_Mail" title="Emerald Mail"><span class="ajaxttlink">Emerald Mail</span></a></span></li>
+<li><span class="nobreak"><a href="/Silver_Talisman" title="Silver Talisman"><span class="ajaxttlink">Silver Talisman</span></a></span></li>
+<li><span class="nobreak"><a href="/Spellbound_Kusari" title="Spellbound Kusari"><span class="ajaxttlink">Spellbound Kusari</span></a></span></li>
+<li><span class="nobreak"><a href="/Enchanted_Ring" title="Enchanted Ring"><span class="ajaxttlink">Enchanted Ring</span></a></span></li>
+<li><span class="nobreak"><a href="/Shillelagh" title="Shillelagh"><span class="ajaxttlink">Shillelagh</span></a></span></li>
+<li><span class="nobreak"><a href="/Thousand_Fold_Blade" title="Thousand Fold Blade"><span class="ajaxttlink">Thousand Fold Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Book_of_Souls" title="Book of Souls"><span class="ajaxttlink">Book of Souls</span></a></span></li>
+<li><span class="nobreak"><a href="/Fortified_Scepter" title="Fortified Scepter"><span class="ajaxttlink">Fortified Scepter</span></a></span></li>
+<li><span class="nobreak"><a href="/Heavy_Hammer" title="Heavy Hammer"><span class="ajaxttlink">Heavy Hammer</span></a></span></li>
+<li><span class="nobreak"><a href="/Short_Sword" title="Short Sword"><span class="ajaxttlink">Short Sword</span></a></span></li>
+<li><span class="nobreak"><a href="/Sorcerer%27s_Staff" title="Sorcerer&#39;s Staff"><span class="ajaxttlink">Sorcerer's Staff</span></a></span></li>
+<li><span class="nobreak"><a href="/Ward_Stone" title="Ward Stone"><span class="ajaxttlink">Ward Stone</span></a></span></li>
+<li><span class="nobreak"><a href="/8-Pointed_Shuriken" title="8-Pointed Shuriken"><span class="ajaxttlink">8-Pointed Shuriken</span></a></span></li>
+<li><span class="nobreak"><a href="/Cursed_Gauntlet" title="Cursed Gauntlet"><span class="ajaxttlink">Cursed Gauntlet</span></a></span></li>
+<li><span class="nobreak"><a href="/Emerald_Talisman" title="Emerald Talisman"><span class="ajaxttlink">Emerald Talisman</span></a></span></li>
+<li><span class="nobreak"><a href="/Enchanted_Spear" title="Enchanted Spear"><span class="ajaxttlink">Enchanted Spear</span></a></span></li>
+<li><span class="nobreak"><a href="/Restored_Artifact" title="Restored Artifact"><span class="ajaxttlink">Restored Artifact</span></a></span></li>
+<li><span class="nobreak"><a href="/Sage%27s_Stone" title="Sage&#39;s Stone"><span class="ajaxttlink">Sage's Stone</span></a></span></li>
+<li><span class="nobreak"><a href="/Steel_Mail" title="Steel Mail"><span class="ajaxttlink">Steel Mail</span></a></span></li>
+<li><span class="nobreak"><a href="/Talon_Trinket" title="Talon Trinket"><span class="ajaxttlink">Talon Trinket</span></a></span></li>
+<li><span class="nobreak"><a href="/Cloak_of_Concentration" title="Cloak of Concentration"><span class="ajaxttlink">Cloak of Concentration</span></a></span></li>
+<li><span class="nobreak"><a href="/Rod_of_Healing" title="Rod of Healing"><span class="ajaxttlink">Rod of Healing</span></a></span></li>
+<li><span class="nobreak"><a href="/Spell_Focus" title="Spell Focus"><span class="ajaxttlink">Spell Focus</span></a></span></li>
+<li><span class="nobreak"><a href="/Warrior%27s_Bane" title="Warrior&#39;s Bane"><span class="ajaxttlink">Warrior's Bane</span></a></span></li>
+<li><span class="nobreak"><a href="/Armored_Cloak" title="Armored Cloak"><span class="ajaxttlink">Armored Cloak</span></a></span></li>
+<li><span class="nobreak"><a href="/Heavy_Mace" title="Heavy Mace"><span class="ajaxttlink">Heavy Mace</span></a></span></li>
+<li><span class="nobreak"><a href="/Apprentice_Staff" title="Apprentice Staff"><span class="ajaxttlink">Apprentice Staff</span></a></span></li>
+<li><span class="nobreak"><a href="/Cursed_Orb" title="Cursed Orb"><span class="ajaxttlink">Cursed Orb</span></a></span></li>
+<li><span class="nobreak"><a href="/Dynasty_Plate_Helm" title="Dynasty Plate Helm"><span class="ajaxttlink">Dynasty Plate Helm</span></a></span></li>
+<li><span class="nobreak"><a href="/Honed_Edge" title="Honed Edge"><span class="ajaxttlink">Honed Edge</span></a></span></li>
+<li><span class="nobreak"><a href="/Knight%27s_Shield" title="Knight&#39;s Shield"><span class="ajaxttlink">Knight's Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Spiked_Shield" title="Spiked Shield"><span class="ajaxttlink">Spiked Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Stone_of_Binding" title="Stone of Binding"><span class="ajaxttlink">Stone of Binding</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr><tr style="height:2px"><td></td></tr><tr><td class="navbox-group" style=";;">Tier III</td><td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+</div><table cellspacing="0" class="nowraplinks navbox-subgroup" style="width:100%;;;;" data-expandtext="show" data-collapsetext="hide"><tbody><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist"><div style="padding:0em 0.25em">
+<ul><li><span class="nobreak"><a href="/Ninja_Tabi" title="Ninja Tabi"><span class="ajaxttlink">Ninja Tabi</span></a></span></li>
+<li><span class="nobreak"><a href="/Reinforced_Greaves" title="Reinforced Greaves"><span class="ajaxttlink">Reinforced Greaves</span></a></span></li>
+<li><span class="nobreak"><a href="/Reinforced_Shoes" title="Reinforced Shoes"><span class="ajaxttlink">Reinforced Shoes</span></a></span></li>
+<li><span class="nobreak"><a href="/Shoes_of_the_Magi" title="Shoes of the Magi"><span class="ajaxttlink">Shoes of the Magi</span></a></span></li>
+<li><span class="nobreak"><a href="/Shoes_of_Focus" title="Shoes of Focus"><span class="ajaxttlink">Shoes of Focus</span></a></span></li>
+<li><span class="nobreak"><a href="/Talaria_Boots" title="Talaria Boots"><span class="ajaxttlink">Talaria Boots</span></a></span></li>
+<li><span class="nobreak"><a href="/Traveler%27s_Shoes" title="Traveler&#39;s Shoes"><span class="ajaxttlink">Traveler's Shoes</span></a></span></li>
+<li><span class="nobreak"><a href="/Warrior_Tabi" title="Warrior Tabi"><span class="ajaxttlink">Warrior Tabi</span></a></span></li>
+<li><span class="nobreak"><a href="/Relic_Dagger" title="Relic Dagger"><span class="ajaxttlink">Relic Dagger</span></a></span></li>
+<li><span class="nobreak"><a href="/Winged_Blade" title="Winged Blade"><span class="ajaxttlink">Winged Blade</span></a></span></li>
+<li><span class="nobreak"><strong class="mw-selflink selflink"><span class="ajaxttlink">Emperor's Armor</span></strong></span></li>
+<li><span class="nobreak"><a href="/Golden_Blade" title="Golden Blade"><span class="ajaxttlink">Golden Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Shield_of_Regrowth" title="Shield of Regrowth"><span class="ajaxttlink">Shield of Regrowth</span></a></span></li>
+<li><span class="nobreak"><a href="/Bristlebush_Acorn" title="Bristlebush Acorn"><span class="ajaxttlink">Bristlebush Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Contagion" title="Contagion"><span class="ajaxttlink">Contagion</span></a></span></li>
+<li><span class="nobreak"><a href="/Evergreen_Acorn" title="Evergreen Acorn"><span class="ajaxttlink">Evergreen Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Lotus_Crown" title="Lotus Crown"><span class="ajaxttlink">Lotus Crown</span></a></span></li>
+<li><span class="nobreak"><a href="/Thickbark_Acorn" title="Thickbark Acorn"><span class="ajaxttlink">Thickbark Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Thistlethorn_Acorn" title="Thistlethorn Acorn"><span class="ajaxttlink">Thistlethorn Acorn</span></a></span></li>
+<li><span class="nobreak"><a href="/Witchblade" title="Witchblade"><span class="ajaxttlink">Witchblade</span></a></span></li>
+<li><span class="nobreak"><a href="/Heartward_Amulet" title="Heartward Amulet"><span class="ajaxttlink">Heartward Amulet</span></a></span></li>
+<li><span class="nobreak"><a href="/Odysseus%27_Bow" title="Odysseus&#39; Bow"><span class="ajaxttlink">Odysseus' Bow</span></a></span></li>
+<li><span class="nobreak"><a href="/Oni_Hunter%27s_Garb" title="Oni Hunter&#39;s Garb"><span class="ajaxttlink">Oni Hunter's Garb</span></a></span></li>
+<li><span class="nobreak"><a href="/Soul_Eater" title="Soul Eater"><span class="ajaxttlink">Soul Eater</span></a></span></li>
+<li><span class="nobreak"><a href="/Sovereignty" title="Sovereignty"><span class="ajaxttlink">Sovereignty</span></a></span></li>
+<li><span class="nobreak"><a href="/Spectral_Armor" title="Spectral Armor"><span class="ajaxttlink">Spectral Armor</span></a></span></li>
+<li><span class="nobreak"><a href="/Ancile" title="Ancile"><span class="ajaxttlink">Ancile</span></a></span></li>
+<li><span class="nobreak"><a href="/Celestial_Legion_Helm" title="Celestial Legion Helm"><span class="ajaxttlink">Celestial Legion Helm</span></a></span></li>
+<li><span class="nobreak"><a href="/Hydra%27s_Lament" title="Hydra&#39;s Lament"><span class="ajaxttlink">Hydra's Lament</span></a></span></li>
+<li><span class="nobreak"><a href="/Jade_Emperor%27s_Crown" title="Jade Emperor&#39;s Crown"><span class="ajaxttlink">Jade Emperor's Crown</span></a></span></li>
+<li><span class="nobreak"><a href="/Magi%27s_Cloak" title="Magi&#39;s Cloak"><span class="ajaxttlink">Magi's Cloak</span></a></span></li>
+<li><span class="nobreak"><a href="/Runic_Shield" title="Runic Shield"><span class="ajaxttlink">Runic Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Talisman_of_Energy" title="Talisman of Energy"><span class="ajaxttlink">Talisman of Energy</span></a></span></li>
+<li><span class="nobreak"><a href="/Atalanta%27s_Bow" title="Atalanta&#39;s Bow"><span class="ajaxttlink">Atalanta's Bow</span></a></span></li>
+<li><span class="nobreak"><a href="/Blackthorn_Hammer" title="Blackthorn Hammer"><span class="ajaxttlink">Blackthorn Hammer</span></a></span></li>
+<li><span class="nobreak"><a href="/Genji%27s_Guard" title="Genji&#39;s Guard"><span class="ajaxttlink">Genji's Guard</span></a></span></li>
+<li><span class="nobreak"><a href="/Hide_of_the_Nemean_Lion" title="Hide of the Nemean Lion"><span class="ajaxttlink">Hide of the Nemean Lion</span></a></span></li>
+<li><span class="nobreak"><a href="/Shogun%27s_Kusari" title="Shogun&#39;s Kusari"><span class="ajaxttlink">Shogun's Kusari</span></a></span></li>
+<li><span class="nobreak"><a href="/Silverbranch_Bow" title="Silverbranch Bow"><span class="ajaxttlink">Silverbranch Bow</span></a></span></li>
+<li><span class="nobreak"><a href="/The_Executioner" title="The Executioner"><span class="ajaxttlink">The Executioner</span></a></span></li>
+<li><span class="nobreak"><a href="/Toxic_Blade" title="Toxic Blade"><span class="ajaxttlink">Toxic Blade</span></a></span></li>
+<li><span class="nobreak"><a href="/Mail_of_Renewal" title="Mail of Renewal"><span class="ajaxttlink">Mail of Renewal</span></a></span></li>
+<li><span class="nobreak"><a href="/Pestilence" title="Pestilence"><span class="ajaxttlink">Pestilence</span></a></span></li>
+<li><span class="nobreak"><a href="/Stone_of_Gaia" title="Stone of Gaia"><span class="ajaxttlink">Stone of Gaia</span></a></span></li>
+<li><span class="nobreak"><a href="/Void_Stone" title="Void Stone"><span class="ajaxttlink">Void Stone</span></a></span></li>
+<li><span class="nobreak"><a href="/Breastplate_of_Valor" title="Breastplate of Valor"><span class="ajaxttlink">Breastplate of Valor</span></a></span></li>
+<li><span class="nobreak"><a href="/Bulwark_of_Hope" title="Bulwark of Hope"><span class="ajaxttlink">Bulwark of Hope</span></a></span></li>
+<li><span class="nobreak"><a href="/Demonic_Grip" title="Demonic Grip"><span class="ajaxttlink">Demonic Grip</span></a></span></li>
+<li><span class="nobreak"><a href="/Devourer%27s_Gauntlet" title="Devourer&#39;s Gauntlet"><span class="ajaxttlink">Devourer's Gauntlet</span></a></span></li>
+<li><span class="nobreak"><a href="/Divine_Ruin" title="Divine Ruin"><span class="ajaxttlink">Divine Ruin</span></a></span></li>
+<li><span class="nobreak"><a href="/Frostbound_Hammer" title="Frostbound Hammer"><span class="ajaxttlink">Frostbound Hammer</span></a></span></li>
+<li><span class="nobreak"><a href="/Lono%27s_Mask" title="Lono&#39;s Mask"><span class="ajaxttlink">Lono's Mask</span></a></span></li>
+<li><span class="nobreak"><a href="/Midgardian_Mail" title="Midgardian Mail"><span class="ajaxttlink">Midgardian Mail</span></a></span></li>
+<li><span class="nobreak"><a href="/Poisoned_Star" title="Poisoned Star"><span class="ajaxttlink">Poisoned Star</span></a></span></li>
+<li><span class="nobreak"><a href="/Polynomicon" title="Polynomicon"><span class="ajaxttlink">Polynomicon</span></a></span></li>
+<li><span class="nobreak"><a href="/Pythagorem%27s_Piece" title="Pythagorem&#39;s Piece"><span class="ajaxttlink">Pythagorem's Piece</span></a></span></li>
+<li><span class="nobreak"><a href="/Soul_Gem" title="Soul Gem"><span class="ajaxttlink">Soul Gem</span></a></span></li>
+<li><span class="nobreak"><a href="/The_Sledge" title="The Sledge"><span class="ajaxttlink">The Sledge</span></a></span></li>
+<li><span class="nobreak"><a href="/Brawler%27s_Beat_Stick" title="Brawler&#39;s Beat Stick"><span class="ajaxttlink">Brawler's Beat Stick</span></a></span></li>
+<li><span class="nobreak"><a href="/Gauntlet_of_Thebes" title="Gauntlet of Thebes"><span class="ajaxttlink">Gauntlet of Thebes</span></a></span></li>
+<li><span class="nobreak"><a href="/Jotunn%27s_Wrath" title="Jotunn&#39;s Wrath"><span class="ajaxttlink">Jotunn's Wrath</span></a></span></li>
+<li><span class="nobreak"><a href="/Mystical_Mail" title="Mystical Mail"><span class="ajaxttlink">Mystical Mail</span></a></span></li>
+<li><span class="nobreak"><a href="/Shifter%27s_Shield" title="Shifter&#39;s Shield"><span class="ajaxttlink">Shifter's Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Stone_Cutting_Sword" title="Stone Cutting Sword"><span class="ajaxttlink">Stone Cutting Sword</span></a></span></li>
+<li><span class="nobreak"><a href="/Gladiator%27s_Shield" title="Gladiator&#39;s Shield"><span class="ajaxttlink">Gladiator's Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Pridwen" title="Pridwen"><span class="ajaxttlink">Pridwen</span></a></span></li>
+<li><span class="nobreak"><a href="/Runeforged_Hammer" title="Runeforged Hammer"><span class="ajaxttlink">Runeforged Hammer</span></a></span></li>
+<li><span class="nobreak"><a href="/Shadowsteel_Shuriken" title="Shadowsteel Shuriken"><span class="ajaxttlink">Shadowsteel Shuriken</span></a></span></li>
+<li><span class="nobreak"><a href="/The_Crusher" title="The Crusher"><span class="ajaxttlink">The Crusher</span></a></span></li>
+<li><span class="nobreak"><a href="/Hide_of_the_Urchin" title="Hide of the Urchin"><span class="ajaxttlink">Hide of the Urchin</span></a></span></li>
+<li><span class="nobreak"><a href="/Ichaival" title="Ichaival"><span class="ajaxttlink">Ichaival</span></a></span></li>
+<li><span class="nobreak"><a href="/Bancroft%27s_Talon" title="Bancroft&#39;s Talon"><span class="ajaxttlink">Bancroft's Talon</span></a></span></li>
+<li><span class="nobreak"><a href="/Berserker%27s_Shield" title="Berserker&#39;s Shield"><span class="ajaxttlink">Berserker's Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Book_of_Thoth" title="Book of Thoth"><span class="ajaxttlink">Book of Thoth</span></a></span></li>
+<li><span class="nobreak"><a href="/Caduceus_Shield" title="Caduceus Shield"><span class="ajaxttlink">Caduceus Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Charon%27s_Coin" title="Charon&#39;s Coin"><span class="ajaxttlink">Charon's Coin</span></a></span></li>
+<li><span class="nobreak"><a href="/Dominance" title="Dominance"><span class="ajaxttlink">Dominance</span></a></span></li>
+<li><span class="nobreak"><a href="/Hastened_Katana" title="Hastened Katana"><span class="ajaxttlink">Hastened Katana</span></a></span></li>
+<li><span class="nobreak"><a href="/Rage" title="Rage"><span class="ajaxttlink">Rage</span></a></span></li>
+<li><span class="nobreak"><a href="/Rangda%27s_Mask" title="Rangda&#39;s Mask"><span class="ajaxttlink">Rangda's Mask</span></a></span></li>
+<li><span class="nobreak"><a href="/Spirit_Robe" title="Spirit Robe"><span class="ajaxttlink">Spirit Robe</span></a></span></li>
+<li><span class="nobreak"><a href="/Warlock%27s_Staff" title="Warlock&#39;s Staff"><span class="ajaxttlink">Warlock's Staff</span></a></span></li>
+<li><span class="nobreak"><a href="/Wind_Demon" title="Wind Demon"><span class="ajaxttlink">Wind Demon</span></a></span></li>
+<li><span class="nobreak"><a href="/Asi" title="Asi"><span class="ajaxttlink">Asi</span></a></span></li>
+<li><span class="nobreak"><a href="/Obsidian_Shard" title="Obsidian Shard"><span class="ajaxttlink">Obsidian Shard</span></a></span></li>
+<li><span class="nobreak"><a href="/Spear_of_the_Magus" title="Spear of the Magus"><span class="ajaxttlink">Spear of the Magus</span></a></span></li>
+<li><span class="nobreak"><a href="/Titan%27s_Bane" title="Titan&#39;s Bane"><span class="ajaxttlink">Titan's Bane</span></a></span></li>
+<li><span class="nobreak"><a href="/Arondight" title="Arondight"><span class="ajaxttlink">Arondight</span></a></span></li>
+<li><span class="nobreak"><a href="/Book_of_the_Dead" title="Book of the Dead"><span class="ajaxttlink">Book of the Dead</span></a></span></li>
+<li><span class="nobreak"><a href="/Ethereal_Staff" title="Ethereal Staff"><span class="ajaxttlink">Ethereal Staff</span></a></span></li>
+<li><span class="nobreak"><a href="/Ring_of_Hecate" title="Ring of Hecate"><span class="ajaxttlink">Ring of Hecate</span></a></span></li>
+<li><span class="nobreak"><a href="/Rod_of_Asclepius" title="Rod of Asclepius"><span class="ajaxttlink">Rod of Asclepius</span></a></span></li>
+<li><span class="nobreak"><a href="/Spear_of_Desolation" title="Spear of Desolation"><span class="ajaxttlink">Spear of Desolation</span></a></span></li>
+<li><span class="nobreak"><a href="/Stone_of_Fal" title="Stone of Fal"><span class="ajaxttlink">Stone of Fal</span></a></span></li>
+<li><span class="nobreak"><a href="/Transcendence" title="Transcendence"><span class="ajaxttlink">Transcendence</span></a></span></li>
+<li><span class="nobreak"><a href="/Tyrannical_Plate_Helm" title="Tyrannical Plate Helm"><span class="ajaxttlink">Tyrannical Plate Helm</span></a></span></li>
+<li><span class="nobreak"><a href="/Void_Shield" title="Void Shield"><span class="ajaxttlink">Void Shield</span></a></span></li>
+<li><span class="nobreak"><a href="/Malice" title="Malice"><span class="ajaxttlink">Malice</span></a></span></li>
+<li><span class="nobreak"><a href="/Serrated_Edge" title="Serrated Edge"><span class="ajaxttlink">Serrated Edge</span></a></span></li>
+<li><span class="nobreak"><a href="/Soul_Reaver" title="Soul Reaver"><span class="ajaxttlink">Soul Reaver</span></a></span></li>
+<li><span class="nobreak"><a href="/Chronos%27_Pendant" title="Chronos&#39; Pendant"><span class="ajaxttlink">Chronos' Pendant</span></a></span></li>
+<li><span class="nobreak"><a href="/Gem_of_Isolation" title="Gem of Isolation"><span class="ajaxttlink">Gem of Isolation</span></a></span></li>
+<li><span class="nobreak"><a href="/Hastened_Ring" title="Hastened Ring"><span class="ajaxttlink">Hastened Ring</span></a></span></li>
+<li><span class="nobreak"><a href="/Qin%27s_Sais" title="Qin&#39;s Sais"><span class="ajaxttlink">Qin's Sais</span></a></span></li>
+<li><span class="nobreak"><a href="/Telkhines_Ring" title="Telkhines Ring"><span class="ajaxttlink">Telkhines Ring</span></a></span></li>
+<li><span class="nobreak"><a href="/Bloodforge" title="Bloodforge"><span class="ajaxttlink">Bloodforge</span></a></span></li>
+<li><span class="nobreak"><a href="/Fail-not" title="Fail-not"><span class="ajaxttlink">Fail-not</span></a></span></li>
+<li><span class="nobreak"><a href="/Staff_of_Myrddin" title="Staff of Myrddin"><span class="ajaxttlink">Staff of Myrddin</span></a></span></li>
+<li><span class="nobreak"><a href="/Typhon%27s_Fang" title="Typhon&#39;s Fang"><span class="ajaxttlink">Typhon's Fang</span></a></span></li>
+<li><span class="nobreak"><a href="/Doom_Orb" title="Doom Orb"><span class="ajaxttlink">Doom Orb</span></a></span></li>
+<li><span class="nobreak"><a href="/Heartseeker" title="Heartseeker"><span class="ajaxttlink">Heartseeker</span></a></span></li>
+<li><span class="nobreak"><a href="/Mantle_of_Discord" title="Mantle of Discord"><span class="ajaxttlink">Mantle of Discord</span></a></span></li>
+<li><span class="nobreak"><a href="/Deathbringer" title="Deathbringer"><span class="ajaxttlink">Deathbringer</span></a></span></li>
+<li><span class="nobreak"><a href="/Rod_of_Tahuti" title="Rod of Tahuti"><span class="ajaxttlink">Rod of Tahuti</span></a></span></li></ul></div></td></tr></tbody></table><div></div></td></tr></tbody></table><div></div></td></tr></tbody></table></td></tr></tbody></table>
+<p><br />
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20210224002932
+Cache expiry: 1209600
+Dynamic content: false
+CPU time usage: 0.205 seconds
+Real time usage: 0.260 seconds
+Preprocessor visited node count: 2661/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 108003/2097152 bytes
+Template argument size: 60964/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+141.03%   71.866     13 Template:Navbox
+100.00%   50.958      1 -total
+ 76.92%   39.197      1 Template:Item_nav
+ 16.35%    8.330      1 Template:Item_infobox_v2
+  6.15%    3.134      1 Template:Navbar
+  5.89%    3.004      3 Template:Fontcolor
+-->
+
+<!-- Saved in parser cache with key prod:smite_gamepedia:pcache:idhash:55211-0!canonical and timestamp 20210224002932 and revision id 512203
+ -->
+</div></div>						<div class="printfooter">
+							Retrieved from "<a dir="ltr" href="https://smite.gamepedia.com/Emperor%27s_Armor?oldid=512203">https://smite.gamepedia.com/Emperor%27s_Armor?oldid=512203</a>"						</div>
+						<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/Category:Tier_3_items" title="Category:Tier 3 items">Tier 3 items</a></li><li><a href="/Category:Defensive_items" title="Category:Defensive items">Defensive items</a></li><li><a href="/Category:Utility_items" title="Category:Utility items">Utility items</a></li><li><a href="/Category:Health_items" title="Category:Health items">Health items</a></li><li><a href="/Category:Physical_Protection_items" title="Category:Physical Protection items">Physical Protection items</a></li><li><a href="/Category:Aura_items" title="Category:Aura items">Aura items</a></li></ul></div></div>					<div class="visualClear"></div>
+									</div>
+								<div id="siderail_smite_gamepedia">
+					<div id='middlemrec_smite_gamepedia'><a href='https://www.gamepedia.com/PRO?utm_source=GPPromo&utm_medium=Rail'><img src='https://gamepedia.cursecdn.com/commons_hydra/c/c2/Pro_Promorail_v2.jpg'></a></div>				</div>
+				<div class="visualClear"></div>
+								</div>
+			<div id="mw-navigation">
+				<h2>Navigation menu</h2>
+				<div id="mw-head">
+										<div id="left-navigation">
+											<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/Emperor%27s_Armor" title="View the content page [c]" accesskey="c">Page</a></span></li><li id="ca-talk" class="new"><span><a href="/Talk:Emperor%27s_Armor?action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+						<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-sharing" role="navigation" class="vectorMenu" aria-labelledby="p-sharing-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-sharing-label" />
+						<h3 id="p-sharing-label"><span>Share</span></h3>
+						<div class="menu">
+							
+				<div id="socialIconImages">
+					<a href="https://twitter.com/intent/tweet?text=Check+out+Emperor%27s+Armor+on+Smite+Wiki+--&amp;via=CurseGamepedia&amp;url=https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor" target="_blank"><img src="/extensions-ucp/Social/images/social/twitter.svg"/></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor" target="_blank"><img src="/extensions-ucp/Social/images/social/facebook.svg"/></a><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor&amp;title=Check+out+Emperor%27s+Armor+on+Smite+Wiki+via+%40CurseGamepedia%3A+https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor" target="_blank"><img src="/extensions-ucp/Social/images/social/reddit.svg"/></a><a href="https://www.tumblr.com/share/link?url=https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor&amp;name=Smite+Wiki&amp;description=Check+out+Emperor%27s+Armor+on+Smite+Wiki+via+%3Ca+href%3D%22https%3A%2F%2Ftwitter.com%2FCurseGamepedia%22+target%3D%22_blank%22%3E%40CurseGamepedia%3C%2Fa%3E%3A+https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor" target="_blank"><img src="/extensions-ucp/Social/images/social/tumblr.svg"/></a><a href="https://vk.com/share.php?url=https%3A%2F%2Fsmite.gamepedia.com%2FEmperor%2527s_Armor" target="_blank"><img src="/extensions-ucp/Social/images/social/vk.svg"/></a>
+				</div>
+						</div>
+					</div>
+										</div>
+					<div id="right-navigation">
+											<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/Emperor%27s_Armor">View</a></span></li><li id="ca-ve-edit" class="collapsible"><span><a href="/Emperor%27s_Armor?veaction=edit" title="Edit this page [v]" accesskey="v">Edit</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/Emperor%27s_Armor?action=edit" title="Edit this page [e]" accesskey="e">Edit source</a></span></li><li id="ca-history" class="collapsible"><span><a href="/Emperor%27s_Armor?action=history" title="Past revisions of this page [h]" accesskey="h">History</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Smite Wiki" title="Search Smite Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+										</div>
+				</div>
+				<div id="mw-panel">
+					<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Smite_Wiki" title="Visit the main page - Smite Wiki"></a></div>
+							<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/Smite_Wiki" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-SMITE-Esports-Wiki"><a href="https://smite-esports.gamepedia.com/SMITE_Esports_Wiki">SMITE Esports Wiki</a></li><li id="n-portal"><a href="/Smite_Wiki:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-Admin-noticeboard"><a href="/Smite_Wiki:Admin_noticeboard">Admin noticeboard</a></li><li id="n-SMITE-Wiki-Discord"><a href="https://discord.gg/j894QHD" rel="nofollow" target="_blank">SMITE Wiki Discord</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-General_Information" aria-labelledby="p-General_Information-label">
+			<h3 id="p-General_Information-label">General Information</h3>
+			<div class="body">
+								<ul>
+					<li id="n-What-is-SMITE.3F"><a href="/SMITE">What is SMITE?</a></li><li id="n-Gods"><a href="/Gods">Gods</a></li><li id="n-Items"><a href="/Items">Items</a></li><li id="n-Game-Modes"><a href="/Game_Modes">Game Modes</a></li><li id="n-Ranked"><a href="/Ranked">Ranked</a></li><li id="n-Gameplay-Elements"><a href="/Gameplay_Elements">Gameplay Elements</a></li><li id="n-Commendations"><a href="/Commendations">Commendations</a></li><li id="n-Quests"><a href="/Quest_System">Quests</a></li><li id="n-Achievements"><a href="/Achievements">Achievements</a></li><li id="n-Voices-and-Music"><a href="/Voices_and_Music">Voices and Music</a></li><li id="n-Cosmetic-Items"><a href="/Cosmetic_Items">Cosmetic Items</a></li><li id="n-Treasure-Chests"><a href="/Treasure_Chests">Treasure Chests</a></li><li id="n-Battle-Pass"><a href="/Battle_Pass">Battle Pass</a></li><li id="n-Events"><a href="/Events">Events</a></li><li id="n-Lore"><a href="/Lore">Lore</a></li><li id="n-Patch-Notes"><a href="/Patch_notes">Patch Notes</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Links" aria-labelledby="p-Links-label">
+			<h3 id="p-Links-label">Links</h3>
+			<div class="body">
+								<ul>
+					<li id="n-Official-Website"><a href="https://www.smitegame.com/" rel="nofollow" target="_blank">Official Website</a></li><li id="n-Official-Reddit"><a href="https://old.reddit.com/r/smitegame/" rel="nofollow" target="_blank">Official Reddit</a></li><li id="n-Official-Twitter"><a href="https://twitter.com/smitegame" rel="nofollow" target="_blank">Official Twitter</a></li><li id="n-Official-Facebook"><a href="https://www.facebook.com/smitegame" rel="nofollow" target="_blank">Official Facebook</a></li><li id="n-Official-YouTube"><a href="https://www.youtube.com/user/smitegame" rel="nofollow" target="_blank">Official YouTube</a></li><li id="n-Official-Instagram"><a href="https://www.instagram.com/smitegame/" rel="nofollow" target="_blank">Official Instagram</a></li><li id="n-Official-Twitch"><a href="https://www.twitch.tv/smitegame" rel="nofollow" target="_blank">Official Twitch</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-Gamepedia" aria-labelledby="p-Gamepedia-label">
+			<h3 id="p-Gamepedia-label">Gamepedia</h3>
+			<div class="body">
+								<ul>
+					<li id="n-gamepedia-support"><a href="https://gamepedia.zendesk.com" rel="nofollow" target="_blank">Gamepedia support</a></li><li id="n-bad-ad"><a href="https://community.fandom.com/wiki/Help%3ABad_advertisements" target="_blank">Report a bad ad</a></li><li id="n-gamepedia-help"><a href="https://help.gamepedia.com/">Help Wiki</a></li><li id="n-gamepedia-contact"><a href="https://help.gamepedia.com/How_to_contact_Gamepedia">Contact us</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Emperor%27s_Armor" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Emperor%27s_Armor" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/Emperor%27s_Armor?printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/Emperor%27s_Armor?oldid=512203" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/Emperor%27s_Armor?action=info" title="More information about this page">Page information</a></li><li id="t-cargopagevalueslink"><a href="/Emperor%27s_Armor?action=pagevalues" rel="cargo-pagevalues">Page values</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-socialProfiles" aria-labelledby="p-socialProfiles-label">
+			<h3 id="p-socialProfiles-label"></h3>
+			<div class="body">
+				<div class='socialSidebar'>
+						<script type='text/javascript'>
+							document.getElementById('p-socialProfiles').className = 'portal persistent';
+						</script>
+						<div class='socialLink twitter'><a href="https://twitter.com/CurseGamepedia" target="_blank"><img src="/extensions-ucp/Social/images/social/twitter.svg" width="32"/></a></div><div class='socialLink facebook'><a href="https://www.facebook.com/CurseGamepedia" target="_blank"><img src="/extensions-ucp/Social/images/social/facebook.svg" width="32"/></a></div><div class='socialLink twitch'><a href="https://www.twitch.tv/gamepedia/videos" target="_blank"><img src="/extensions-ucp/Social/images/social/twitch.svg" width="32"/></a></div>
+					</div>			</div>
+		</div>
+					</div>
+			</div>
+						<div id="footer" role="contentinfo">
+								<ul id="footer-info">
+										<li id="footer-info-lastmod"> This page was last edited on 27 January 2021, at 01:24.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" href="https://www.fandom.com/licensing">CC BY-NC-SA 3.0</a> unless otherwise noted.<br/>Game content and materials are trademarks and copyrights of their respective publisher and its licensors.  All rights reserved.<br />
+This site is a part of Fandom, Inc. and is not affiliated with the game publisher.</li>
+										</ul>
+									<ul id="footer-places">
+										<li id="footer-places-about"><a href="/Smite_Wiki:About" title="Smite Wiki:About">About Smite Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/Smite_Wiki:General_disclaimer" title="Smite Wiki:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-mobileview"><a href="https://smite.gamepedia.com/Emperor%27s_Armor?mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+										</ul>
+														<ul id="footer-icons" class="noprint">
+												<li id="footer-copyrightico">
+							<a href="https://www.fandom.com/licensing" target="_blank"><img src="//i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" alt="CC BY-NC-SA 3.0" width="88" height="31"/></a>						</li>
+													<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/" target="_blank"><img src="/resources-ucp/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources-ucp/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources-ucp/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+												</ul>
+									<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div id="footer-push"></div>
+	</div>
+		
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.205","walltime":"0.260","ppvisitednodes":{"value":2661,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1000000},"postexpandincludesize":{"value":108003,"limit":2097152},"templateargumentsize":{"value":60964,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["141.03%   71.866     13 Template:Navbox","100.00%   50.958      1 -total"," 76.92%   39.197      1 Template:Item_nav"," 16.35%    8.330      1 Template:Item_infobox_v2","  6.15%    3.134      1 Template:Navbar","  5.89%    3.004      3 Template:Fontcolor"]},"cachereport":{"timestamp":"20210224002932","ttl":1209600,"transientcontent":false}}});});</script>
+<script defer="" src="https://www.fastly-insights.com/static/scout.js?k=17272cd8-82ee-4eb5-b5a3-b3cd5403f7c5"></script>
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;display=swap&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+<div id="footer-and-prefooter">
+	<div id="gamepedia-footer">
+		<div class="footer-wrapper-gp">
+			<div class="footer-box footer-logo">
+				<a href="https://www.gamepedia.com">
+					<img src="/skins-ucp/Hydra/images/footer/premium-logo-light.svg" class="footer-gp-logo"/>
+				</a>
+			</div>
+			<div class="footer-box footer-social">
+				<ul class="social">
+					<li>
+						<a href="https://www.facebook.com/CurseGamepedia" title="Facebook"><svg width="10" height="21" xmlns="http://www.w3.org/2000/svg"><path d="M9.364531 3.5096969H7.651507c-1.370419 0-1.598822.7261441-1.598822 1.6943364v2.2994565h3.311846l-.342605 3.6307209H6.281088v9.3188503H2.85504v-9.3188503H0V7.5034898h2.85504V4.8409612C2.85504 1.8153604 4.568064 0 7.080499 0c1.142016 0 2.16983.121024 2.512435.121024v3.3886729h-.228403z" fill-rule="evenodd"/></svg></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/CurseGamepedia" title="Twitter"><svg width="23" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M19.822727 4.2972696v.5729693c0 5.8729351-4.518416 12.6053241-12.826471 12.6053241-2.623596 0-4.955681-.7162116-6.996256-2.0053925.437266 0 .728777.1432423 1.166043.1432423 2.040575 0 4.081149-.7162116 5.684458-1.8621501-1.894819 0-3.643883-1.2891809-4.226905-3.151331.291511 0 .583022.1432423.874532.1432423.437266 0 .437266 0 1.020288-.1432423-2.186331-.429727-4.08115-2.2918772-4.08115-4.440512 0 .429727 1.603309.429727 2.332086.5729693C1.603309 5.8729351.874532 4.5837542.874532 3.0080887c0-.8594539.291511-1.5756655.728777-2.2918771 2.18633 2.7216041 5.684458 4.4405119 9.328342 4.7269965-.145756-.4297269-.145756-.7162116-.145756-1.0026962C10.785895 2.0053925 12.82647 0 15.304311 0c1.311798 0 2.477841.429727 3.352373 1.4324232 1.020287-.2864846 1.894819-.5729693 2.769351-1.1459386-.437266 1.1459386-1.166042 1.8621502-1.894819 2.4351195.874532-.1432423 1.894819-.429727 2.623596-.7162116-.728777.8594539-1.457553 1.7189078-2.332085 2.2918771z" fill-rule="evenodd"/></svg></a>
+					</li>
+					<li>
+						<a href="https://youtube.com/CurseEntertainment" title="Youtube"><svg width="24" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M23.8 3.6s-.2-1.7-1-2.4c-.9-1-1.9-1-2.4-1C17 0 12 0 12 0S7 0 3.6.2c-.5.1-1.5.1-2.4 1-.7.7-1 2.4-1 2.4S0 5.5 0 7.5v1.8c0 1.9.2 3.9.2 3.9s.2 1.7 1 2.4c.9 1 2.1.9 2.6 1 1.9.2 8.2.2 8.2.2s5 0 8.4-.3c.5-.1 1.5-.1 2.4-1 .7-.7 1-2.4 1-2.4s.2-1.9.2-3.9V7.4c0-1.9-.2-3.8-.2-3.8zM9.5 11.5V4.8L16 8.2l-6.5 3.3z" fill-rule="evenodd"/></svg></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-box footer-links mobile-split">
+				<ul>
+					<li>
+						<a href="https://support.gamepedia.com">Support</a>
+					</li>
+					<li>
+						<a href="https://help.gamepedia.com/How_to_contact_Gamepedia">Contact</a>
+					</li>
+					<li>
+						<a href="https://www.gamepedia.com/pro">PRO</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer id="curse-footer" role="complimentary" class="hide-ads">
+		<div class="footer-wrapper">
+						<div class="footer-box footer-logo">
+				<a href="https://www.fandom.com" target="_blank"><img src="/skins-ucp/Hydra/images/footer/fandom-logo.svg" /></a>
+			</div>
+			<div class="footer-box footer-properties">
+				<h2>Explore Properties</h2>
+				<ul class="properties mobile-split">
+					<li><a href="https://www.fandom.com">Fandom</a></li>
+					<li><a href="https://www.gamepedia.com">Gamepedia</a></li>
+					<li><a href="https://www.dndbeyond.com">D&amp;D Beyond</a></li>
+					<li><a href="https://www.muthead.com">Muthead</a></li>
+					<li><a href="https://www.futhead.com">Futhead</a></li>
+								</ul>
+			</div>
+			<div class="footer-box footer-social">
+				<h2>Follow Us</h2>
+				<ul class="social">
+					<li><a href="https://www.facebook.com/getfandom" title="Facebook"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="11" height="24" viewBox="0 0 11 24"><path d="M10.7 4L8.8 4C7.2 4 6.9 4.9 6.9 6L6.9 8.6 10.7 8.6 10.3 12.8 7.2 12.8 7.2 23.5 3.3 23.5 3.3 12.8 0 12.8 0 8.6 3.3 8.6 3.3 5.6C3.3 2.1 5.2 0 8.1 0 9.4 0 10.6 0.1 11 0.1L11 4 10.7 4Z"/></svg></a></li>
+					<li><a href="https://twitter.com/getfandom" title="Twitter"><svg width="24" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M20.957 4.543v.606c0 6.209-4.777 13.327-13.56 13.327-2.774 0-5.24-.758-7.397-2.12.462 0 .77.15 1.233.15 2.157 0 4.314-.756 6.01-1.968-2.004 0-3.853-1.363-4.47-3.332.309 0 .617.152.925.152.463 0 .463 0 1.079-.152C2.466 10.752.462 8.783.462 6.512c0 .454 1.695.454 2.466.606C1.695 6.209.925 4.846.925 3.18c0-.908.308-1.666.77-2.423 2.311 2.878 6.01 4.695 9.862 4.998-.154-.455-.154-.758-.154-1.06C11.403 2.12 13.56 0 16.18 0c1.387 0 2.62.454 3.544 1.514 1.079-.302 2.004-.605 2.928-1.211-.462 1.211-1.233 1.969-2.003 2.574a14.785 14.785 0 0 0 2.774-.757c-.77.909-1.541 1.817-2.466 2.423z" fill-rule="evenodd"/></svg></a></li>
+					<li><a href="https://www.youtube.com/fandomentertainment" title="Youtube"><svg width="24" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M23.8 3.6s-.2-1.7-1-2.4c-.9-1-1.9-1-2.4-1C17 0 12 0 12 0S7 0 3.6.2c-.5.1-1.5.1-2.4 1-.7.7-1 2.4-1 2.4S0 5.5 0 7.5v1.8c0 1.9.2 3.9.2 3.9s.2 1.7 1 2.4c.9 1 2.1.9 2.6 1 1.9.2 8.2.2 8.2.2s5 0 8.4-.3c.5-.1 1.5-.1 2.4-1 .7-.7 1-2.4 1-2.4s.2-1.9.2-3.9V7.4c0-1.9-.2-3.8-.2-3.8zM9.5 11.5V4.8L16 8.2l-6.5 3.3z" fill-rule="evenodd" /></svg></a></li>
+					<li><a href="https://www.instagram.com/getfandom/" title="Instagram"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.510373 0H2.406639C1.078838 0 0 1.0788382 0 2.3236515v15.1867219c0 1.3278009 1.078838 2.406639 2.406639 2.406639h15.186722C18.921162 19.9170124 20 18.8381743 20 17.593361V2.3236515C19.917012 1.0788382 18.838174 0 17.510373 0zm-2.572614 2.4896266h1.659751c.497926 0 .829876.3319502.829876.8298755v1.659751c0 .4979253-.33195.8298755-.829876.8298755h-1.659751c-.497925 0-.829875-.3319502-.829875-.8298755v-1.659751c0-.4979253.33195-.8298755.829875-.8298755zM9.958506 6.1410788c2.074689 0 3.817428 1.7427386 3.817428 3.8174274s-1.742739 3.8174274-3.817428 3.8174274c-2.074689 0-3.817427-1.7427386-3.817427-3.8174274s1.742738-3.8174274 3.817427-3.8174274zm6.639004 11.2863071H3.319502c-.497925 0-.829875-.3319502-.829875-.8298755V8.2987552h1.659751c-.248963.9128631-.331951 1.9917012-.082988 2.9875519.497925 2.3236514 2.406639 4.1493775 4.73029 4.5643153 3.900415.746888 7.302905-2.1576763 7.302905-5.8921162 0-.5809128-.165975-1.1618257-.248963-1.659751h1.659751v8.2987552c-.082987.4979253-.414937.8298755-.912863.8298755z" fill-rule="evenodd" /></svg></a></li>
+					<li><a href="https://www.linkedin.com/company/fandomwikia/" title="LinkedIn"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M3.859375 19h-3.5625V5.9375h3.5625V19zM2.078125 4.43175C.931 4.43175 0 3.493625 0 2.337S.931.24225 2.078125.24225 4.15625 1.180375 4.15625 2.337s-.929812 2.09475-2.078125 2.09475zM18.109375 19h-3.5625v-6.65475c0-3.9995-4.75-3.6966875-4.75 0V19h-3.5625V5.9375h3.5625v2.0959375c1.65775-3.070875 8.3125-3.2976875 8.3125 2.94025V19z" fill-rule="nonzero" /></svg></a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-overview">
+				<h2>Overview</h2>
+				<ul class="mobile-split">
+					<li><a href="https://www.fandom.com/about">About</a></li>
+					<li><a href="https://www.fandom.com/careers">Careers</a></li>
+					<li><a href="https://www.fandom.com/press">Press</a></li>
+					<li><a href="https://www.fandom.com/about#contact">Contact Us</a></li>
+					<li><a href="https://www.fandom.com/terms-of-use">Terms of Use</a></li>
+					<li><a href="https://www.fandom.com/privacy-policy">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-community">
+				<h2>Community</h2>
+				<ul class="mobile-split">
+					<li><a href="https://community.fandom.com/wiki/Community_Central">Community Central</a></li>
+					<li><a href="https://fandom.zendesk.com/hc/en-us">Support</a></li>
+					<li><a href="https://community.fandom.com/wiki/Help:Contents">Help</a></li>
+					<li><a href="https://www.gamepedia.com/do-not-sell-my-info">Do Not Sell My Info</a></li>
+				</ul>
+			</div>
+			<div class="footer-box footer-advertise">
+				<h2>Advertise</h2>
+				<ul class="mobile-split">
+					<li><a href="https://www.fandom.com/mediakit">Media Kit</a></li>
+					<li><a href="https://www.fandom.com/mediakit#contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-post">
+			Smite Wiki is a Fandom Gaming Community.			<hr />
+			<span class="footer-post-mobile"><a href="https://smite.gamepedia.com/Emperor%27s_Armor?mobileaction=toggle_view_mobile">View Mobile Site</a></span>
+		</div>
+	</footer>
+</div>
+
+<div id='cdm-zone-end'></div>
+			<script type="text/javascript">
+				window.genreCategory = '';
+				window.wikiTags = null;
+			</script><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 0px; width: 0px; position: absolute; overflow: hidden;" aria-hidden="true"><defs><path id="flag-small" d="M3 11h10.586l-3.293-3.293a.999.999 0 0 1 0-1.414L13.586 3H3v8zm-1 7a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0h13a1.002 1.002 0 0 1 .707 1.707L12.414 7l4.293 4.293A1 1 0 0 1 16 13H3v4a1 1 0 0 1-1 1z"/><path id="alert-small" d="M2.618 15.995L9 3.199l6.382 12.796H2.618zm15.276.554l-8-16.04C9.555-.17 8.445-.17 8.105.51l-8 16.04A1.003 1.003 0 0 0 1 18h16c.347 0 .668-.18.85-.476a.998.998 0 0 0 .044-.975zM8 7.975V9.98a1 1 0 1 0 2 0V7.975a1 1 0 1 0-2 0m1.71 4.3c-.05-.04-.1-.09-.16-.12a.567.567 0 0 0-.17-.09.61.61 0 0 0-.19-.06.999.999 0 0 0-.9.27c-.09.101-.16.201-.21.33a1.01 1.01 0 0 0-.08.383c0 .26.11.52.29.711.19.18.44.291.71.291.06 0 .13-.01.19-.02a.635.635 0 0 0 .19-.06.59.59 0 0 0 .17-.09c.06-.04.11-.08.16-.12.18-.192.29-.452.29-.712 0-.132-.03-.261-.08-.382a.94.94 0 0 0-.21-.33"/><path id="close-tiny" d="M7.426 6.001l4.278-4.279A1.008 1.008 0 1 0 10.278.296L6 4.574 1.723.296A1.008 1.008 0 1 0 .295 1.722l4.278 4.28-4.279 4.277a1.008 1.008 0 1 0 1.427 1.426L6 7.427l4.278 4.278a1.006 1.006 0 0 0 1.426 0 1.008 1.008 0 0 0 0-1.426L7.425 6.001z"/></defs><symbol id="wds-icons-flag-small" viewbox="0 0 18 18"><use fill-rule="evenodd" xlink:href="#flag-small"/></symbol><symbol id="wds-icons-checkmark-small" viewbox="0 0 18 18"><path d="M6 16a.997.997 0 0 1-.707-.293l-5-5a.999.999 0 1 1 1.414-1.414L6 13.586 16.293 3.293a.999.999 0 1 1 1.414 1.414l-11 11A.997.997 0 0 1 6 16" fill-rule="evenodd"/></symbol><symbol id="wds-icons-error-small" viewbox="0 0 18 18"><path fill-rule="evenodd" d="M11.0487656,5.33462857 C11.494971,4.88845714 12.2191405,4.88845714 12.6653459,5.33462857 C13.1115514,5.7808 13.1115514,6.50491429 12.6653459,6.95108571 L10.6171899,9.00030476 L12.6653459,11.0483048 C13.1115514,11.4956952 13.1115514,12.2185905 12.6653459,12.665981 C12.4422432,12.8878476 12.1496495,13 11.8570558,13 C11.5644621,13 11.2718683,12.8878476 11.0487656,12.665981 L8.99939043,10.6167619 L6.95123438,12.665981 C6.72813167,12.8878476 6.43431881,13 6.14294422,13 C5.8503505,13 5.55775678,12.8878476 5.33465407,12.665981 C4.88844864,12.2185905 4.88844864,11.4956952 5.33465407,11.0483048 L7.38281012,9.00030476 L5.33465407,6.95108571 C4.88844864,6.50491429 4.88844864,5.7808 5.33465407,5.33462857 C5.78085949,4.88845714 6.50380981,4.88845714 6.95123438,5.33462857 L8.99939043,7.38384762 L11.0487656,5.33462857 Z M16,11.8986667 L16,6.10026667 L11.8997333,2 L6.10026667,2 L2,6.10026667 L2,11.8986667 L6.10026667,16 L11.8997333,16 L16,11.8986667 Z M17.7077333,4.9792 C17.8944,5.16586667 18,5.4208 18,5.6864 L18,12.3136 C18,12.5792 17.8944,12.8330667 17.7077333,13.0208 L13.0208,17.7066667 C12.8330667,17.8944 12.5781333,18 12.3136,18 L5.6864,18 C5.42186667,18 5.16693333,17.8944 4.9792,17.7066667 L0.292266667,13.0208 C0.1056,12.8330667 0,12.5792 0,12.3136 L0,5.6864 C0,5.4208 0.1056,5.16586667 0.292266667,4.9792 L4.9792,0.292266667 C5.16693333,0.104533333 5.42186667,0 5.6864,0 L12.3136,0 C12.5781333,0 12.8330667,0.104533333 13.0208,0.292266667 L17.7077333,4.9792 Z"/></symbol><symbol id="wds-icons-alert-small" viewbox="0 0 18 18"><use fill-rule="evenodd" xlink:href="#alert-small"/></symbol><symbol id="wds-icons-close-tiny" viewbox="0 0 12 12"><use fill-rule="evenodd" xlink:href="#close-tiny"/></symbol><symbol id="wds-icons-info-small" viewbox="0 0 18 18"><path clip-rule="evenodd" d="M9 16C5.141 16 2 12.859 2 9C2 5.141 5.141 2 9 2C12.859 2 16 5.141 16 9C16 12.859 12.859 16 9 16M9 0C4.037 0 0 4.037 0 9C0 13.963 4.037 18 9 18C13.963 18 18 13.963 18 9C18 4.037 13.963 0 9 0"/><path clip-rule="evenodd" d="M8 12.9975V8.00982C8 7.45545 8.447 7.00735 9 7.00735 9.553 7.00735 10 7.45545 10 8.00982V12.9975C10 13.5519 9.553 14 9 14 8.447 14 8 13.5519 8 12.9975zM9.71 5.71419C9.66 5.75429 9.609 5.80541 9.55 5.83449 9.5 5.87459 9.439 5.90466 9.38 5.92471 9.319 5.95478 9.26 5.97584 9.189 5.98586 8.87 6.05603 8.52 5.94376 8.29 5.71419 8.2 5.61394 8.13 5.51369 8.08 5.38437 8.03 5.26307 8 5.13375 8 5.00243 8 4.74178 8.109 4.48214 8.29 4.29067 8.48 4.11022 8.73 3.99995 9 3.99995 9.06 3.99995 9.13 4.00998 9.189 4.02 9.26 4.03003 9.319 4.05108 9.38 4.08015 9.439 4.1002 9.5 4.13128 9.55 4.17037 9.609 4.21047 9.66 4.25057 9.71 4.29067 9.89 4.48214 10 4.74178 10 5.00243 10 5.13375 9.97 5.26307 9.92 5.38437 9.87 5.51369 9.8 5.62397 9.71 5.71419"/></symbol></svg>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":99});});</script>
+	</body>
+</html>
+		

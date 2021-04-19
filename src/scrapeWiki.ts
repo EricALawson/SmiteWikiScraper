@@ -56,6 +56,8 @@ async function readStatTable(pagePromise: Promise<Page>, url: string): Promise<s
     await page.goto(url);
     await page.waitForSelector('table.infobox');
     const tableHTML = await page.$eval('table.infobox', el => el.textContent);
+    await page.waitForSelector('table.tabber');
+    const ancestorHTML = await page.$eval('table.tabber', el => el.textContent);
     page.close();
-    return tableHTML;
+    return tableHTML.concat(ancestorHTML);
 }
