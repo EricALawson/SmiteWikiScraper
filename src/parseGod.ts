@@ -1,8 +1,18 @@
 import God from "smite-timeline/src/data_objects/God";
 import StatBlock from "smite-timeline/src/data_objects/StatBlock";
 
+type GodWithImage = God & {
+    image: string,
+    baseMoveSpeed: number,
+    autoAttack: {
+        progression: number[],
+        multiplier: number,
+        attackDuration: number,
+        range: number
+    }
+}
 
-export default function parseGod(html: string): God {
+export default function parseGod(html: string): GodWithImage {
     html = html.replace(/(\r?\n|\r)/gm, "");
     const name = parseName(html);
     const { base: baseHealth, perLevel: perLevelHealth } = parseStat(html, 'Health');
@@ -18,7 +28,7 @@ export default function parseGod(html: string): God {
     const range = parseRange(html);
     const imageURL = parseImageURL(html);
 
-    const god: God = {
+    const god: GodWithImage = {
         name: name,
         autoAttack: {
             progression: attackProgression,
@@ -48,7 +58,7 @@ export default function parseGod(html: string): God {
             magicalProtection: perLevelMagicalProtection
         }),
         image: imageURL,
-    } as God;
+    };
     return god;
 }
 
