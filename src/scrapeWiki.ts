@@ -2,10 +2,10 @@
 
 import fs from 'fs';
 import puppeteer, { Browser, Page } from 'puppeteer';
-import { RawHTML } from './scrape';
+import { RawHTML } from '.';
 
-const smiteWikiURL = 'https://smite.gamepedia.com/';
-const smiteWikiItemPage = "https://smite.gamepedia.com/Items/";
+const smiteWikiURL = 'https://smite.fandom.com/';
+const smiteWikiItemPage = "https://smite.fandom.com/Items";
 
 export default async function scrapeWiki() {
     const browser = await puppeteer.launch();
@@ -30,7 +30,24 @@ async function scrapeGods(browser: Browser) {
             html: await html
         } as RawHTML;
     })
-    return Promise.all(tableHTML);
+    const godScrapes = await Promise.allSettled(tableHTML);
+    const successfulScrapes: RawHTML[] = [];
+    const failedScrapes: Error[] = [];
+    godScrapes.forEach((res, index, arr) => {
+        if (res.status === 'fulfilled') {
+            successfulScrapes.push(arr.values[index]);
+        } else {
+            failedScrapes.push(arr.values[index]);
+        }
+    });
+
+    printFailedScrapes(failedScrapes);
+
+    if(successfulScrapes.length > 0) {
+        return successfulScrapes;
+    } else {
+        throw new Error('No pages could be scraped.');
+    }
 };
 
 async function scrapeItems(browser: Browser) {
@@ -48,7 +65,24 @@ async function scrapeItems(browser: Browser) {
             html: await item
         } as RawHTML;
     });
-    return Promise.all(tableHTML);
+    const godScrapes = await Promise.allSettled(tableHTML);
+    const successfulScrapes: RawHTML[] = [];
+    const failedScrapes: Error[] = [];
+    godScrapes.forEach((res, index, arr) => {
+        if (res.status === 'fulfilled') {
+            successfulScrapes.push(arr.values[index]);
+        } else {
+            failedScrapes.push(arr.values[index]);
+        }
+    });
+
+    printFailedScrapes(failedScrapes);
+
+    if (successfulScrapes.length > 0) {
+        return successfulScrapes;
+    } else {
+        throw new Error('No pages could be scraped.');
+    };
 }
 
 async function readStatTable(pagePromise: Promise<Page>, url: string): Promise<string> {
@@ -60,4 +94,11 @@ async function readStatTable(pagePromise: Promise<Page>, url: string): Promise<s
     const ancestorHTML = await page.$eval('table.tabber', el => el.textContent);
     page.close();
     return tableHTML.concat(ancestorHTML);
+}
+
+function printFailedScrapes(scrapes: Error[]) {
+    console.log(`${scrapes.length} pages failed to load, or did not contain expected CSS selectors`);
+    scrapes.forEach(value => {
+        console.log(value);
+    });
 }
