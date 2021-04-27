@@ -37,11 +37,14 @@ function writeRawHtmlToDatabase(gods: RawHTML[], items: RawHTML[]) {
 }
 
 async function downloadImages(gods: God[], items: Item[]) {
-    gods.map(async god => {
+    gods.forEach(async god => {
         const response: AxiosResponse<fs.ReadStream> = await axios(god.image, {responseType:'stream'});
-        response.data.pipe(fs.createWriteStream('./images/god-cards/' + god.name));
+        const stream = response.data.pipe(fs.createWriteStream('./images/god-cards/' + god.name));
+        stream
+            .on('finish', () => { return; })
+            .on('error', err => { throw err });
     });
-    items.map(async item => {
+    items.forEach(async item => {
         const response: AxiosResponse<fs.ReadStream> = await axios(item.image, { responseType: 'stream' });
         const stream = response.data.pipe(fs.createWriteStream('./images/items/' + item.name));
         stream
