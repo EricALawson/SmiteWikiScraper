@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "tsc && node -r source-map-support/register build/src/index.js gods"
+    "start": "tsc && node -r source-map-support/register build/src/index.js"
   },
   "author": "Eric Lawson",
   "license": "ISC"
