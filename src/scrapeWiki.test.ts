@@ -13,7 +13,7 @@ beforeEach(async () => {
 })
 
 afterEach(async () => {
-    page.close();
+    if(!page.isClosed())  page.close();
 });
 
 afterAll(async () => {
@@ -29,6 +29,10 @@ test('readListPageURLs',async () => {
 
 test('readStatTable', async () => {
     const url = new URL('https://smite.fandom.com/wiki/Emperor%27s_Armor');
-    const html = readStatTable(page, url, itemTableSelectors);
-    expect(html).not.toBeFalsy();
-});
+    return readStatTable(page, url, itemTableSelectors)
+        .then( data => {
+            expect(data).toBeTruthy();
+            expect(data).toContain('Emperor\'s Armor');
+            return data;
+        });
+}); 

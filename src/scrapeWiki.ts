@@ -9,8 +9,18 @@ export const godListPage = 'https://smite.fandom.com';
 export const itemListPage = "https://smite.fandom.com/Items";
 export const godListPageSelector = 'div.fpbox.smite-window span a';
 export const itemListPageSelector = 'div.items-overview-grid span a';
-export const itemTableSelectors = ['table.infobox', 'table.tabber'];
-export const godTableSelectors = ['table.infobox'];
+type PageSelector = {
+    selector: string,
+    required: boolean
+};
+export const itemTableSelectors: PageSelector[] = [
+    {selector: 'table.infobox', required: true}, 
+    {selector: 'table.wikitable', required: true}, 
+    {selector: 'table.tabber', required: false}
+];
+export const godTableSelectors: PageSelector[] = [
+    {selector: 'table.infobox', required: true}
+];
 
 export default async function scrapeWiki() {
     const browser = await puppeteer.launch();
@@ -22,31 +32,54 @@ export default async function scrapeWiki() {
 
 async function scrapeItems(browser: Browser) {
     const urls = await readListPageURLs(await browser.newPage(), itemListPage, itemListPageSelector);
-    const tableHTML: Promise<RawHTML>[] = urls.map(async (url) => {
-        console.log(url);
-        const item = readStatTable(await browser.newPage(), url, itemTableSelectors);
-        return {
-            name: urlToName(url),
+    // const tableHTML: Promise<RawHTML>[] = urls.map(async (url) => {
+    //     const item = readStatTable(await browser.newPage(), url, itemTableSelectors);
+    //     return {
+    //         name: urlToName(url),
+    //         type: 'item',
+    //         html: await item
+    //     } as RawHTML;
+    // });
+    // const godScrapes = await Promise.allSettled(tableHTML);
+    // return handleFailures(godScrapes);
+    const tableHTML: RawHTML[] = [];
+    for (const url of urls) {
+        const page = await browser.newPage();
+        const html = await readStatTable(page, url, godTableSelectors);
+        const name = urlToName(url);
+        tableHTML.push({
+            name: name,
             type: 'item',
-            html: await item
-        } as RawHTML;
-    });
-    const godScrapes = await Promise.allSettled(tableHTML);
-    return handleFailures(godScrapes);
+            html: html
+        })
+    }
+    return tableHTML;
 }
 
 async function scrapeGods(browser: Browser) {
     const urls = await readListPageURLs(await browser.newPage(), godListPage, godListPageSelector);
-    const tableHTML: Promise<RawHTML>[] = urls.map(async (url) => {
-        const html = readStatTable(await browser.newPage(), url, godTableSelectors);
-        return {
-            name: urlToName(url),
+    // const tableHTML: Promise<RawHTML>[] = urls.map(async (url) => {
+    //     const html = readStatTable(await browser.newPage(), url, godTableSelectors);
+    //     return {
+    //         name: urlToName(url),
+    //         type: 'god',
+    //         html: await html
+    //     } as RawHTML;
+    // })
+    // const godScrapes = await Promise.allSettled(tableHTML);
+    // return handleFailures(godScrapes);
+    const tableHTML: RawHTML[] = [];
+    for (const url of urls) {
+        const page = await browser.newPage();
+        const html = await readStatTable(page, url, godTableSelectors);
+        const name = urlToName(url);
+        tableHTML.push({
+            name: name,
             type: 'god',
-            html: await html
-        } as RawHTML;
-    })
-    const godScrapes = await Promise.allSettled(tableHTML);
-    return handleFailures(godScrapes);
+            html: html
+        })
+    }
+    return tableHTML;
 };
 
 export async function readListPageURLs(page: Page, listPage: string, selector: string) {
@@ -59,13 +92,20 @@ export async function readListPageURLs(page: Page, listPage: string, selector: s
 }
 
 
-export async function readStatTable(page: Page, url: URL, selectors: string[]): Promise<string> {
+export async function readStatTable(page: Page, url: URL, selectors: PageSelector[]): Promise<string> {
     await page.goto(url.toString());
-    selectors.forEach(async (selector) => await page.waitForSelector(selector));
-    const htmlPromises: Promise<string>[] = selectors.map(async (selector) => page.$eval(selector, el => el.textContent));
-    const html = await Promise.all(htmlPromises);
-    page.close();
-    return html.join();
+    let html = "";
+    for (const {selector, required} of selectors) {
+        const selectorHTML = await page.$eval(selector, el => el.innerHTML)
+            .catch(reason => {
+                if(required) throw reason;
+                return "";
+
+            });
+        html = html.concat(selectorHTML);
+    }
+    await page.close(); 
+    return html; 
 }
 
 function printFailedScrapes(scrapes: Error[]) {
@@ -76,10 +116,10 @@ function printFailedScrapes(scrapes: Error[]) {
 }
 
 function urlToName(name: URL): string {
-    const match = /.+\/?(.*)$/.exec(name.toString());
+    const match = /.+\/(.*)$/.exec(name.toString());
     if(!match) throw new Error(`URL: ${name} could not be converted to a simple name`);
     const trimmedName = match[1]; //capture group from regex
-    const nameWithoutHTMLApostrophe = trimmedName.replaceAll('%27s', '\'');
+    const nameWithoutHTMLApostrophe = trimmedName.replace(/%27s/g, '\'');
     const nameWithSpaces = nameWithoutHTMLApostrophe.replace('_', ' ');
     return nameWithSpaces;
 }
