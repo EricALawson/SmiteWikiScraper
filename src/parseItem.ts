@@ -1,7 +1,8 @@
-import Item from "smite-timeline/src/data_objects/Item";
-import StatBlock from "smite-timeline/src/data_objects/StatBlock";
+
 import {parseName, parseImageURL} from './parseGod';
 import _ from 'lodash';
+import StatBlock from '@smite-timeline/smite-game-objects/lib/StatBlock';
+import Item from '@smite-timeline/smite-game-objects/lib/Item';
 
 
 export default function parseItem(html: string): Item {

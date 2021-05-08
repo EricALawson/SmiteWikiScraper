@@ -1,5 +1,4 @@
 import fs from 'fs';
-import God from 'smite-timeline/src/data_objects/God';
 import parseGod, { parseAttackProgression, parseDamage, parseName, parseImageURL, parseStat } from './parseGod';
 
 test('parse god\'s name', () => {

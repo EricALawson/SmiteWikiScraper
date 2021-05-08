@@ -1,5 +1,6 @@
-import God from "smite-timeline/src/data_objects/God";
-import StatBlock from "smite-timeline/src/data_objects/StatBlock";
+
+import God from '@smite-timeline/smite-game-objects/lib/God';
+import StatBlock from '@smite-timeline/smite-game-objects/lib/StatBlock';
 
 type GodWithImage = God & {
     image: string,
@@ -69,7 +70,7 @@ export function parseImageURL(html: string): string {
     return match[1];
 }
 
-export function parseName(html): string {
+export function parseName(html: string): string {
     const regex = /class="title">(.*?)</i;
     const match = regex.exec(html);
     if (!match) throw new Error(`could not parse god's name from:\n${html}`);
@@ -127,7 +128,7 @@ export function parseMoveSpeed(html:string): number {
     return parseFloat(speed);
 }
 
-export function parseRange(html): number {
+export function parseRange(html: string): number {
     const regex = /Range:.*?>(?<range>\d+\.?\d*)/i;
     const match = regex.exec(html);
     if (!match) throw new Error(`Could not parse range from:\n${html}`);
