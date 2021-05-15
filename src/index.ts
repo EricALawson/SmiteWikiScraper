@@ -1,12 +1,14 @@
 import { fstat } from 'fs';
 import mongodb from 'mongodb';
 import fs from 'fs';
+import path from 'path';
+import {mkdir} from 'fs/promises'
 import scrapeWiki from './scrapeWiki';
 import parseGod from './parseGod';
 import axios, { AxiosResponse } from 'axios';
-import God from 'smite-timeline/src/data_objects/God';
-import Item from 'smite-timeline/src/data_objects/Item';
 import parseItem from './parseItem';
+import God from '@smite-timeline/smite-game-objects/lib/God';
+import Item from '@smite-timeline/smite-game-objects/lib/Item';
 
 //Webscraper Main Entrypoint
 (async function() {
@@ -30,25 +32,54 @@ function writeRawHtmlToDatabase(gods: RawHTML[], items: RawHTML[]) {
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     client.connect((err: Error) => {
         const collection = client.db("smite-timeline").collection("wiki-scraper-raw");
-        console.log(collection);
+        //console.log(collection);
         // perform actions on the collection object
         client.close();
     });
 }
 
-async function downloadImages(gods: God[], items: Item[]) {
+export async function downloadImages(gods: God[], items: Item[]) {
+    const imagesDir = './images';
+    const godsDir = path.join(imagesDir, 'gods');
+    const itemsDir = path.join(imagesDir, 'items');
+    await mkdir(imagesDir)
+        .catch((err: NodeJS.ErrnoException) => {
+            if (err.code === 'EEXIST') {
+                return;
+            } else {
+                throw err;
+            }
+        });
+    await mkdir(godsDir)
+        .catch((err: NodeJS.ErrnoException) => {
+            if (err.code === 'EEXIST') {
+                return;
+            } else {
+                throw err;
+            }
+        });
+    await mkdir(itemsDir)
+        .catch((err: NodeJS.ErrnoException) => {
+            if (err.code === 'EEXIST') {
+                return;
+            } else {
+                throw err;
+            }
+        });
+
     gods.forEach(async god => {
         const response: AxiosResponse<fs.ReadStream> = await axios(god.image, {responseType:'stream'});
-        const stream = response.data.pipe(fs.createWriteStream('./images/god-cards/' + god.name));
+        const stream = response.data.pipe(fs.createWriteStream(path.join(godsDir, god.name + '.jpg')));
         stream
             .on('finish', () => { return; })
-            .on('error', err => { throw err });
+            .on('error', err => { throw err })
     });
     items.forEach(async item => {
         const response: AxiosResponse<fs.ReadStream> = await axios(item.image, { responseType: 'stream' });
-        const stream = response.data.pipe(fs.createWriteStream('./images/items/' + item.name));
+        const stream = response.data.pipe(fs.createWriteStream(path.join(itemsDir, item.name + '.jpg')));
         stream
             .on('finish', () => {return;})
-            .on('error', err => {throw err});
+            .on('error', err => {throw err})
     });
+    return;
 }
