@@ -1,14 +1,24 @@
 import parseItem, { parseCost, parsePassive, parseStats } from "./parseItem";
 import fs from 'fs';
 
+describe('parseStats', () => {
+    it('reads a stat value correctly', () => {
+        const testStr = '<th>Stats:</th><td>+250 Health <br/>+60 Physical Protection</td></tr>';
+        const result = parseStats(testStr);
+        expect(result).toMatchObject({
+            health: 250, physicalProtection: 60
+        });
+    });
 
-test('parseStats', () => {
-    const testStr = '<th>Stats:</th><td>+250 Health <br/>+60 Physical Protection</td></tr>';
-    const result = parseStats(testStr);
-    expect(result).toMatchObject({
-        health: 250, physicalProtection: 60
+    it('reads a percentage stat value as a decimal', () => {
+        const testStr = '<tr style=""><th>Stats:</th><td>+8% Movement Speed</td></tr>';
+        const result = parseStats(testStr);
+        expect(result).toMatchObject({
+            movementSpeed: 0.08,
+        });
     });
 });
+
 
 test('parseCost', () => {
     const testStr = '<th>Total Cost:</th><td style="color:gold;">2000</td></tr>';

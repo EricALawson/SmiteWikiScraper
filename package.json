@@ -4,7 +4,7 @@
   "description": "webscraper to read smite wiki and save item and god stats to a file",
   "main": "src/index.js",
   "dependencies": {
-    "@smite-timeline/smite-game-objects": "^1.0.3",
+    "@smite-timeline/smite-game-objects": "^1.0.4",
     "@types/mongodb": "^3.6.7",
     "@types/node": "^15.0.2",
     "@types/puppeteer": "^5.4.3",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "tsc && node -r source-map-support/register build/src/index.js"
+    "start": "tsc && node -r source-map-support/register build/src/index.js --trace-warnings"
   },
   "author": "Eric Lawson",
   "license": "ISC"
