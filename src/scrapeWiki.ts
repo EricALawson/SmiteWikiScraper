@@ -2,6 +2,7 @@
 
 import fs from 'fs';
 import puppeteer, { Browser, Page } from 'puppeteer';
+import { pipeline } from 'stream';
 import { RawHTML } from '.';
 
 export const smiteWikiURL = 'https://smite.fandom.com';
@@ -24,63 +25,60 @@ export const godTableSelectors: PageSelector[] = [
 
 export default async function scrapeWiki() {
     const browser = await puppeteer.launch();
-    const items = await scrapeItems(browser);
-    const gods = await scrapeGods(browser);
+    const {html: items, errors: itemErrors} = await scrapeItems(browser);
+    const {html: gods, errors: godErrors} = await scrapeGods(browser);
     browser.close();
     return { items: items, gods: gods};
 }
 
 async function scrapeItems(browser: Browser) {
-    const urls = await readListPageURLs(await browser.newPage(), itemListPage, itemListPageSelector);
-    // const tableHTML: Promise<RawHTML>[] = urls.map(async (url) => {
-    //     const item = readStatTable(await browser.newPage(), url, itemTableSelectors);
-    //     return {
-    //         name: urlToName(url),
-    //         type: 'item',
-    //         html: await item
-    //     } as RawHTML;
-    // });
-    // const godScrapes = await Promise.allSettled(tableHTML);
-    // return handleFailures(godScrapes);
-    const tableHTML: RawHTML[] = [];
-    for (const url of urls) {
-        const page = await browser.newPage();
-        const html = await readStatTable(page, url, godTableSelectors);
-        const name = urlToName(url);
-        tableHTML.push({
-            name: name,
-            type: 'item',
-            html: html
-        })
-    }
-    return tableHTML;
+    return await scrape(
+        browser,
+        'item',
+        { url: itemListPage, linkSelector: itemListPageSelector },
+        itemTableSelectors
+    );
+}
+async function scrapeGods(browser: Browser) {
+    return await scrape(
+        browser, 
+        'god',
+        { url: godListPage, linkSelector: godListPageSelector },
+        godTableSelectors
+    );
 }
 
-async function scrapeGods(browser: Browser) {
-    const urls = await readListPageURLs(await browser.newPage(), godListPage, godListPageSelector);
-    // const tableHTML: Promise<RawHTML>[] = urls.map(async (url) => {
-    //     const html = readStatTable(await browser.newPage(), url, godTableSelectors);
-    //     return {
-    //         name: urlToName(url),
-    //         type: 'god',
-    //         html: await html
-    //     } as RawHTML;
-    // })
-    // const godScrapes = await Promise.allSettled(tableHTML);
-    // return handleFailures(godScrapes);
+async function scrape(
+    browser: Browser, 
+    type: 'item'|'god', 
+    listPage: {url: string, linkSelector: string}, 
+    selectors: PageSelector[]
+    ): Promise<{html: RawHTML[],errors: Error[]}> 
+{
+    const urls = await readListPageURLs(await browser.newPage(), listPage.url, listPage.linkSelector);
     const tableHTML: RawHTML[] = [];
+    const errors: Error[] = [];
     for (const url of urls) {
+        console.log(`reading url: ${url}`);
         const page = await browser.newPage();
-        const html = await readStatTable(page, url, godTableSelectors);
         const name = urlToName(url);
-        tableHTML.push({
-            name: name,
-            type: 'god',
-            html: html
-        })
+        const result = await readStatTable(page, url, selectors)
+                        .catch(err => {return err;});
+        if (result instanceof Error) {
+            console.log(`${url} failed to be read, reason: ${result}`);
+            errors.push(result);
+        } else {
+            console.log(`${url} was read successfully\n`)
+            tableHTML.push({
+                name: name,
+                type: type,
+                html: result
+            })
+        }
     }
-    return tableHTML;
-};
+
+    return {html: tableHTML, errors: errors};
+}
 
 export async function readListPageURLs(page: Page, listPage: string, selector: string) {
     await page.goto(listPage);
@@ -92,27 +90,19 @@ export async function readListPageURLs(page: Page, listPage: string, selector: s
 }
 
 
-export async function readStatTable(page: Page, url: URL, selectors: PageSelector[]): Promise<string> {
+export async function readStatTable(page: Page, url: URL, selectors: PageSelector[]): Promise<string|Error> {
     await page.goto(url.toString());
     let html = "";
     for (const {selector, required} of selectors) {
         const selectorHTML = await page.$eval(selector, el => el.innerHTML)
             .catch(reason => {
-                if(required) throw reason;
-                return "";
-
+                if(required) {return reason;}
+                else {return "";}
             });
         html = html.concat(selectorHTML);
     }
     await page.close(); 
     return html; 
-}
-
-function printFailedScrapes(scrapes: Error[]) {
-    console.log(`${scrapes.length} pages failed to load, or did not contain expected CSS selectors`);
-    scrapes.forEach(value => {
-        console.log(value);
-    });
 }
 
 function urlToName(name: URL): string {
@@ -122,24 +112,4 @@ function urlToName(name: URL): string {
     const nameWithoutHTMLApostrophe = trimmedName.replace(/%27s/g, '\'');
     const nameWithSpaces = nameWithoutHTMLApostrophe.replace('_', ' ');
     return nameWithSpaces;
-}
-
-function handleFailures(scrapeResults: PromiseSettledResult<RawHTML>[]): RawHTML[] {
-    const successfulScrapes: RawHTML[] = [];
-    const failedScrapes: Error[] = [];
-    scrapeResults.forEach((res) => {
-        if (res.status === 'fulfilled') {
-            successfulScrapes.push(res.value);
-        } else {
-            failedScrapes.push(res.reason);
-        }
-    });
-
-    printFailedScrapes(failedScrapes);
-
-    if (successfulScrapes.length > 0) {
-        return successfulScrapes;
-    } else {
-        throw new Error('No pages could be scraped.');
-    }
 }
