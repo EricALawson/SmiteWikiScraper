@@ -9,12 +9,13 @@
       "outDir": "build",
       "declaration": true,
       "declarationMap" : true,
-      "strictNullChecks": true
+      "strictNullChecks": true,
       // "strict" : true,
     },
     "lib": ["es2015"],
     "include": [
       "node_modules/smite-timeline/src/data_objects/*",
       "src"
-    ]
+    ],
+    
   }

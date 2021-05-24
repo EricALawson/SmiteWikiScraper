@@ -93,7 +93,7 @@ export function parseStat(html: string, statName: string) {
 export function parseDamage(html: string) {
     const regex = /<th>Damage.*?>(?<base>\d+\.?\d*).*?(?<perLevel>\d+\.?\d*).*?(?<multiplier>\d+)%/i;
     const match = regex.exec(html);
-    if (!match) throw new Error(`Parsing damage failed\nhtml:\n${html}`);
+    if (!match || !match.groups) throw new Error(`Parsing damage failed\nhtml:\n${html}`);
     const {base, perLevel, multiplier} = match.groups;
     if (!base || !perLevel || !multiplier) throw new Error(`Parse damage was incomplete\ncaptures: ${match.groups}`);
     return {
@@ -106,7 +106,7 @@ export function parseDamage(html: string) {
 export function parseAttackProgression(html: string) {
     const regex = /Progression:.*?>(?<progression>(?:0?\.?\d\/?)+)/i;
     const match = regex.exec(html);
-    if (!match) throw new Error(`Parsing attack progression failed\nhtml:\n${html}`);
+    if (!match || !match.groups) throw new Error(`Parsing attack progression failed\nhtml:\n${html}`);
     const progression = match.groups.progression.split('/');
     return progression.map(str => parseFloat(str));
 }
@@ -123,7 +123,7 @@ export function parseAttackSpeed(html: string) {
 export function parseMoveSpeed(html:string): number {
     const regex = /Speed:.*?>(?<speed>\d+\.?\d*)/i;
     const match = regex.exec(html);
-    if (!match) throw new Error(`Could not parse move speed from:\n${html}`);
+    if (!match || !match.groups) throw new Error(`Could not parse move speed from:\n${html}`);
     const speed = match.groups.speed;
     return parseFloat(speed);
 }
@@ -131,7 +131,7 @@ export function parseMoveSpeed(html:string): number {
 export function parseRange(html: string): number {
     const regex = /Range:.*?>(?<range>\d+\.?\d*)/i;
     const match = regex.exec(html);
-    if (!match) throw new Error(`Could not parse range from:\n${html}`);
+    if (!match || !match.groups) throw new Error(`Could not parse range from:\n${html}`);
     const range = match.groups.range;
     return parseFloat(range);
 }

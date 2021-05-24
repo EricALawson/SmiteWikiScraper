@@ -54,7 +54,7 @@ export function parseStats(html: string): StatBlock {
     const parseStatRegex = /\+(?<valueStr>\d+)%? (?<statName>.+)/i;
     for (const statStr of statStrs) {
         match = parseStatRegex.exec(statStr);
-        if (!match) throw new Error('stat string could not be broken into value and stat name: ' + statStr);
+        if (!match || !match.groups) throw new Error('stat string could not be broken into value and stat name: ' + statStr);
         const {valueStr, statName} = match.groups;
         let value = parseFloat(valueStr);
         if (statStr.includes('%')) value =  value / 100;
