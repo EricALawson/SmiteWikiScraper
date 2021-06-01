@@ -1,22 +1,35 @@
 import { God, Item } from "@smite-timeline/smite-game-objects"
 
-type ScrapeTarget = {
+export type ScrapeTarget = {
+    name: string,
     type: 'item'|'god',
     url: URL
 }
 
-type RawHTML = ScrapeTarget & {
+export function isScrapeTarget(obj: any): obj is ScrapeTarget {
+    return obj.name && obj.type && obj.url;
+}
+
+export type ScrapeResult = ScrapeTarget & {
     html: string
 }
 
-type ParsedItem = RawHTML & {
+export function isScrapeResult(obj: any): obj is ScrapeResult {
+    return obj.html && isScrapeTarget(obj);
+}
+
+export type ParsedItem = ScrapeResult & {
     type: 'item',
-    item: Item,
+    parseResult: Item,
 }
 
-type ParsedGod = RawHTML & {
+export type ParsedGod = ScrapeResult & {
     type: 'god',
-    god: God
+    parseResult: God
 }
 
-type ParseResult = ParsedItem | ParsedGod 
+export type ParseResult = ParsedItem | ParsedGod 
+
+export function isParseResult(obj: any): obj is ParseResult {
+    return obj.parseResult && isScrapeResult(obj);
+}

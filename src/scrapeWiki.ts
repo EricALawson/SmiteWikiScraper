@@ -1,9 +1,9 @@
 
 
 import fs from 'fs';
-import puppeteer, { Browser, Page } from 'puppeteer';
-import { pipeline } from 'stream';
-import { RawHTML } from '.';
+import puppeteer, { Browser, launch, Page, Puppeteer } from 'puppeteer';
+import NestedError from './NestedError';
+import { ParseResult, ScrapeResult, ScrapeTarget } from './ScrapeTarget';
 
 export const smiteWikiURL = 'https://smite.fandom.com';
 export const godListPage = 'https://smite.fandom.com';
@@ -22,63 +22,95 @@ export const itemTableSelectors: PageSelector[] = [
 export const godTableSelectors: PageSelector[] = [
     {selector: 'table.infobox', required: true}
 ];
-
-export default async function scrapeWiki() {
-    const browser = await puppeteer.launch();
-    const {html: items, errors: itemErrors} = await scrapeItems(browser);
-    const {html: gods, errors: godErrors} = await scrapeGods(browser);
-    browser.close();
-    return { items: items, gods: gods};
+export const selectorMap = {
+    god: godTableSelectors,
+    item: itemTableSelectors
 }
 
-async function scrapeItems(browser: Browser) {
-    return await scrape(
-        browser,
-        'item',
-        { url: itemListPage, linkSelector: itemListPageSelector },
-        itemTableSelectors
-    );
-}
-async function scrapeGods(browser: Browser) {
-    return await scrape(
-        browser, 
-        'god',
-        { url: godListPage, linkSelector: godListPageSelector },
-        godTableSelectors
-    );
+let browser: Browser|null = null;
+const getBrowser = async () => browser ? browser : puppeteer.launch();
+
+export async function readListPages(): Promise<ScrapeTarget[]> {
+    const browser = await getBrowser();
+    const itemURLs = await readListPageURLs(await browser.newPage(), itemListPage, itemListPageSelector);
+    const godURLs = await readListPageURLs(await browser.newPage(), godListPage, godListPageSelector);
+    const itemTargets = itemURLs.map((url): ScrapeTarget => { return {
+            url: url,
+            name: urlToName(url),
+            type: 'item'
+    }});
+    const godTargets = godURLs.map((url): ScrapeTarget => { return {
+            url: url,
+            name: urlToName(url),
+            type: 'god'
+    }});
+    return [...itemTargets, ...godTargets];
 }
 
-async function scrape(
-    browser: Browser, 
-    type: 'item'|'god', 
-    listPage: {url: string, linkSelector: string}, 
-    selectors: PageSelector[]
-    ): Promise<{html: RawHTML[],errors: Error[]}> 
-{
-    const urls = await readListPageURLs(await browser.newPage(), listPage.url, listPage.linkSelector);
-    const tableHTML: RawHTML[] = [];
-    const errors: Error[] = [];
-    for (const url of urls) {
-        console.log(`reading url: ${url}`);
-        const page = await browser.newPage();
-        const name = urlToName(url);
-        const result = await readStatTable(page, url, selectors)
-                        .catch(err => {return err;});
-        if (result instanceof Error) {
-            console.log(`${url} failed to be read, reason: ${result}`);
-            errors.push(result);
-        } else {
-            console.log(`${url} was read successfully\n`)
-            tableHTML.push({
-                name: name,
-                type: type,
-                html: result
-            })
-        }
-    }
-
-    return {html: tableHTML, errors: errors};
+export async function scrapePage(target: ScrapeTarget): Promise<ScrapeResult | Error> {
+    let selectors = selectorMap[target.type]
+    const page = await (await getBrowser()).newPage();
+    const html = await readStatTable(page, target.url, selectors)
+    if(typeof html !== 'string') return html;
+    return Object.assign(target, {html:html});
 }
+
+// export default async function scrapeWiki() {
+//     const browser = await puppeteer.launch();
+//     const {html: items, errors: itemErrors} = await scrapeItems(browser);
+//     const {html: gods, errors: godErrors} = await scrapeGods(browser);
+//     browser.close();
+//     return { items: items, gods: gods};
+// }
+
+// async function scrapeItems(browser: Browser) {
+//     return await scrape(
+//         browser,
+//         'item',
+//         { url: itemListPage, linkSelector: itemListPageSelector },
+//         itemTableSelectors
+//     );
+// }
+// async function scrapeGods(browser: Browser) {
+//     return await scrape(
+//         browser, 
+//         'god',
+//         { url: godListPage, linkSelector: godListPageSelector },
+//         godTableSelectors
+//     );
+// }
+
+// async function scrape(
+//     browser: Browser, 
+//     type: 'item'|'god', 
+//     listPage: {url: string, linkSelector: string}, 
+//     selectors: PageSelector[]
+//     ): Promise<{html: ScrapeResult[],errors: Error[]}> 
+// {
+//     const urls = await readListPageURLs(await browser.newPage(), listPage.url, listPage.linkSelector);
+//     const tableHTML: ScrapeResult[] = [];
+//     const errors: Error[] = [];
+//     for (const url of urls) {
+//         console.log(`reading url: ${url}`);
+//         const page = await browser.newPage();
+//         const name = urlToName(url);
+//         const result = await readStatTable(page, url, selectors)
+//                         .catch(err => {return err;});
+//         if (result instanceof Error) {
+//             console.log(`${url} failed to be read, reason: ${result}`);
+//             errors.push(result);
+//         } else {
+//             console.log(`${url} was read successfully\n`)
+//             tableHTML.push({
+//                 name: name,
+//                 type: type,
+//                 html: result
+//             })
+//         }
+//     }
+
+//     return {html: tableHTML, errors: errors};
+// }
 
 export async function readListPageURLs(page: Page, listPage: string, selector: string) {
     await page.goto(listPage);
