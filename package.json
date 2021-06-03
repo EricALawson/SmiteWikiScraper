@@ -9,6 +9,7 @@
     "@types/node": "^15.0.2",
     "@types/puppeteer": "^5.4.3",
     "chromedriver": "^90.0.0",
+    "cli-progress": "^3.9.0",
     "lodash": "^4.17.21",
     "mongodb": "^3.6.4",
     "puppeteer": "^9.1.1"
@@ -26,7 +27,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "tsc && node -r source-map-support/register build/src/index.js --trace-warnings"
+    "start": "tsc && node -r source-map-support/register --trace-warnings build/src/index.js"
   },
   "author": "Eric Lawson",
   "license": "ISC"

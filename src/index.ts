@@ -19,11 +19,33 @@ import { batchProcess } from './batchProcess';
 
 
 async function processOneURL(target: ScrapeTarget): Promise<ParseResult|Error> {
- const scrapeResult = await scrapePage(target);
- let parseResult = parsePage(scrapeResult);
- parseResult = await downloadImage(parseResult); 
- parseResult = await writeToDatabase(parseResult);
- return parseResult
+    let scrapeResult: null | Error | ScrapeResult = null;
+    let parseResult: null | Error | ParseResult = null;
+    let downloadErr: null | Error = null;
+    let dbWriteErr: null | Error = null;
+    try {
+        scrapeResult = await scrapePage(target);
+        parseResult = parsePage(scrapeResult);
+        parseResult = await downloadImage(parseResult);
+        parseResult = await writeToDatabase(parseResult);
+        return parseResult;
+    } catch (err) {
+        //Expected Errors are returned, not thrown.
+        //If an error is thrown, then append as much context as possible.
+        if (scrapeResult) {
+            err.message += '\nScrape Result:\n' + JSON.stringify(scrapeResult);
+        }
+        if (parseResult) {
+            err.message += '\nParse Result:\n' + JSON.stringify(parseResult);
+        }
+        if (downloadErr) {
+            err.message += '\nDownload Error:\n' + JSON.stringify(downloadErr);
+        }
+        if (dbWriteErr) {
+            err.message += '\nDatabase Write Error:\n' + JSON.stringify(dbWriteErr);
+        }
+        return err;
+    }
 }
 
 function parsePage(scrape: ScrapeResult | Error): ParseResult | Error {
