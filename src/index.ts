@@ -1,5 +1,4 @@
 
-import { MongoClient } from 'mongodb';
 import fs from 'fs';
 import path from 'path';
 import { readListPages, scrapePage } from './scrapeWiki';
@@ -9,6 +8,7 @@ import parseItem from './parseItem';
 import { isParseResult, ParseResult, ScrapeResult, ScrapeTarget } from './ScrapeTarget';
 import { once } from 'events';
 import { batchProcess } from './batchProcess';
+import { writeToDatabase } from './writeToDatabase';
 
 //Webscraper Main Entrypoint
 (async function() {
@@ -89,27 +89,6 @@ async function downloadImage(parseResult: ParseResult | Error): Promise<ParseRes
     stream.close();
     stream.removeAllListeners();
 
-    return parseResult;
-}
-
-async function writeToDatabase(parseResult: ParseResult | Error): Promise<ParseResult | Error> {
-    if (parseResult instanceof Error) return parseResult;
-    const login = fs.readFileSync('./dblogin.txt').toString().split('\n');
-    const [name, pass, database] = login;
-    const uri = "mongodb+srv://${name}:${pass}@smite-timeline-0.n3o8x.mongodb.net/${database}?retryWrites=true&w=majority";
-    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-    try {
-        client.connect((err: Error) => {
-            const collection = client.db("smite-timeline").collection("wiki-scraper-raw");
-            //console.log(collection);
-            //TODO: perform actions on the collection object
-            client.close();
-        });
-    } catch (err) {
-        return err;
-    } finally {
-        client.close();
-    }
     return parseResult;
 }
 

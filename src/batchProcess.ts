@@ -15,7 +15,7 @@ export async function batchProcess<T, V>(
                 resolve();
             } else {
                 processOne(value)
-                    .then(() => { progressBar.increment(); }) //TODO: increment progress
+                    .then(() => { progressBar.increment(); })
                     .then(() => next(resolve))
             }
         })

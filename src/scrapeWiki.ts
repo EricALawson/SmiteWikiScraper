@@ -27,11 +27,18 @@ export const selectorMap = {
     item: itemTableSelectors
 }
 
-let browser: Browser|null = null;
-const getBrowser = async () => browser ? browser : puppeteer.launch();
+let browser: Browser;
+const getBrowser = async () => {
+    if (browser) {
+        return browser;
+    } else {
+        browser = await puppeteer.launch();
+        return browser;
+    }
+}
 
 export async function readListPages(): Promise<ScrapeTarget[]> {
-    browser = await getBrowser();
+    const browser = await getBrowser();
     const itemURLs = await readListPageURLs(await browser.newPage(), itemListPage, itemListPageSelector);
     const godURLs = await readListPageURLs(await browser.newPage(), godListPage, godListPageSelector);
     const itemTargets = itemURLs.map((url): ScrapeTarget => { return {
@@ -49,7 +56,7 @@ export async function readListPages(): Promise<ScrapeTarget[]> {
 
 export async function scrapePage(target: ScrapeTarget): Promise<ScrapeResult | Error> {
     let selectors = selectorMap[target.type]
-    browser = await getBrowser();
+    const browser = await getBrowser();
     const page = await browser.newPage();
     const html = await readStatTable(page, target.url, selectors)
     if (!page.isClosed()) page.close();
