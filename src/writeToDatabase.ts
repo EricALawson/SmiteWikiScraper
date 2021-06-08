@@ -2,13 +2,15 @@ import { Collection, MongoClient } from 'mongodb';
 import fs from 'fs';
 import { ParseResult } from './ScrapeTarget';
 
+
+const loginFile = './dblogin.txt';
+const login = fs.readFileSync(loginFile).toString().split('\n');
+const [name, pass, database] = login.map(str => str.trim());
+const uri = `mongodb+srv://${name}:${pass}@smite-timeline-0.n3o8x.mongodb.net/${database}?retryWrites=true&w=majority`;
+
 export async function writeToDatabase(parseResult: ParseResult | Error): Promise<ParseResult | Error> {
     if (parseResult instanceof Error)
         return parseResult;
-    const login = fs.readFileSync('./dblogin.txt').toString().split('\n');
-    const [name, pass, database] = login.map(str => str.trim());
-    const uri = 'mongodb+srv://' + name +
-    ':' + pass + '@smite-timeline-0.n3o8x.mongodb.net/smite-timeline?retryWrites=true&w=majority'; 
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     try {
         await client.connect();
