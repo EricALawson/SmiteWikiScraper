@@ -3,7 +3,7 @@
 import fs from 'fs';
 import puppeteer, { Browser, launch, Page, Puppeteer } from 'puppeteer';
 import NestedError from './NestedError';
-import { ParseResult, ScrapeResult, ScrapeTarget } from './ScrapeTarget';
+import { ScrapeResult, ScrapeTarget } from './ScrapeTarget';
 
 export const smiteWikiURL = 'https://smite.fandom.com';
 export const godListPage = 'https://smite.fandom.com';
@@ -35,6 +35,10 @@ const getBrowser = async () => {
         browser = await puppeteer.launch();
         return browser;
     }
+}
+
+export async function closeBrowser() {
+    if(browser) await browser.close();
 }
 
 export async function readListPages(): Promise<ScrapeTarget[]> {

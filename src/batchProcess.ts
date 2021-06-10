@@ -6,7 +6,12 @@ export async function batchProcess<T, V>(
     processOne: (ScrapeTarget: T) => Promise<V>
 ): Promise<void[]> {
     const iter = targets.values();
-    const progressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+    const progressBar = new cliProgress.SingleBar(
+        { 
+            format: 'progress [{bar}] | Duration: {duration_formatted} | {value} / {total}'
+        }, 
+        cliProgress.Presets.shades_classic
+    );
     progressBar.start(targets.length, 0);
     const createConsumer = () => {
         return new Promise<void>(function next(resolve) {

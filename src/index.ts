@@ -1,22 +1,25 @@
 
 import fs from 'fs';
 import path from 'path';
-import { readListPages, scrapePage } from './scrapeWiki';
+import { closeBrowser, readListPages, scrapePage } from './scrapeWiki';
 import parseGod from './parseGod';
 import axios, { AxiosResponse } from 'axios';
 import parseItem from './parseItem';
-import { isParseResult, ParseResult, ScrapeResult, ScrapeTarget } from './ScrapeTarget';
+import { ParseResult, ScrapeResult, ScrapeTarget } from './ScrapeTarget';
 import { once } from 'events';
 import { batchProcess } from './batchProcess';
 import { writeToDatabase } from './writeToDatabase';
+import wtf from 'wtfnode';
 
 //Webscraper Main Entrypoint
 (async function() {
-    const targets = await readListPages();
-    await batchProcess(targets, 5, processOneURL);
+    try {
+        const targets = await readListPages();
+        await batchProcess(targets, 5, processOneURL);
+    } finally {
+        closeBrowser();
+    }
 })();
-
-
 
 async function processOneURL(target: ScrapeTarget): Promise<ParseResult|Error> {
     let scrapeResult: null | Error | ScrapeResult = null;

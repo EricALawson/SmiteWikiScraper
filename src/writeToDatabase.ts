@@ -16,25 +16,25 @@ export async function writeToDatabase(parseResult: ParseResult | Error): Promise
         await client.connect();
         const db = client.db('smite-timeline');
         const rawHTMLCollection = db.collection("wiki-scraper-raw");
-        const updateHTMLResult = await rawHTMLCollection.updateOne({
-            name: parseResult.name,
-            type: parseResult.type
-        }, {
-            $set: {html: parseResult.html}
-        },
-            { upsert: true });
+        const updateHTMLResult = await rawHTMLCollection.updateOne(
+            {
+                name: parseResult.name,
+                type: parseResult.type
+            }, 
+            { $set: { html: parseResult.html } },
+            { upsert: true }
+        );
         let collection: Collection<any>;
         if (parseResult.type === 'god') {
             collection = db.collection('gods');
         } else {
             collection = db.collection('items');
         }
-        const updateParsedResult = await collection.updateOne({
-            name: parseResult.name,
-        }, {
-            $set: parseResult.parseResult
-        },
-            { upsert: true });
+        const updateParsedResult = await collection.updateOne(
+            { name: parseResult.name }, 
+            { $set: parseResult.parseResult},
+            { upsert: true }
+        );
         
     } catch (err) {
         return err;
