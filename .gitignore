@@ -4,3 +4,4 @@ gods.json
 dblogin.txt
 images/
 src/testlogin.txt
+src/mongo.test.ts

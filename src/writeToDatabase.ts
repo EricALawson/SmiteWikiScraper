@@ -30,12 +30,7 @@ export async function writeToDatabase(
             { $set: { html: parseResult.html } },
             { upsert: true }
         );
-        let collection: Collection<any>;
-        if (parseResult.type === 'god') {
-            collection = db.collection('gods');
-        } else {
-            collection = db.collection('items');
-        }
+        let collection = db.collection(parseResult.type + "s");
         const updateParsedResult = await collection.updateOne(
             { name: parseResult.name }, 
             { $set: parseResult.parseResult},
@@ -44,7 +39,6 @@ export async function writeToDatabase(
         if (updateParsedResult.result.ok < updateParsedResult.result.n) {
             throw new Error('a write operation failed');
         }
-        
     } catch (err) {
         return err;
     } finally {
