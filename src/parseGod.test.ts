@@ -1,24 +1,25 @@
 import fs from 'fs';
-import parseGod, { parseAttackProgression, parseDamage, parseName, parseImageURL, parseStat } from './parseGod';
+import parseGod, { parseAttackProgression, parseDamage, parseName, parseImageURL, parseStat, parseAttackSpeed } from './parseGod';
 
+let fullPage: string;
+beforeAll(() => {
+    fullPage = fs.readFileSync('./testHTML.txt').toString();
+})
 test('parse god\'s name', () => {
-    const testStr = '<table class="infobox"><tbody><tr><th colspan="2" class="title">Baba Yaga</th></tr><tr>';
-    const name = parseName(testStr);
-    expect(name).toBe('Baba Yaga');
+    const name = parseName(fullPage);
+    expect(name).toBe('Chang\'e');
 });
 
 test('parsing common stats', () => {
-    const teststr = '<tr style=""><th>Health:</th><td><font color="#23b905">400(+73)</font></td></tr>'
-    const  stats = parseStat(teststr, 'Health');
-    expect(stats.base).toBe(400);
-    expect(stats.perLevel).toBe(73);
+    const  stats = parseStat(fullPage, 'Health');
+    expect(stats.base).toBe(410);
+    expect(stats.perLevel).toBe(80);
 });
 
 test('parsing damage', () => {
-    const teststr = '<th colspan="2" style="text-align: center;">Basic Attack</th></tr><tr style=""><th>Damage:</th><td>35 (+ 1.5)<br>+ 20% of Magical Power</td></tr><tr style="">';
-    const stats = parseDamage(teststr);
-    expect(stats.baseDamage).toBe(35);
-    expect(stats.perLevelDamage).toBe(1.5);
+    const stats = parseDamage(fullPage);
+    expect(stats.baseDamage).toBe(32);
+    expect(stats.perLevelDamage).toBe(1.45);
     expect(stats.multiplier).toBe(0.2);
 });
 
@@ -28,6 +29,13 @@ test('parsing attack progression', () => {
     expect(progression).toEqual([1, 0.5, 0.5, 0.5, 1.5]);
 });
 
+test('parse attack speed', ()  => {
+    const speed = parseAttackSpeed(fullPage);
+    expect(speed.attackDuration).toBe(1);
+    expect(speed.baseAttackSpeed).toBe(0);
+    expect(speed.perLevelAttackSpeed).toBe(0.0095);
+})
+
 test('parsing image url', () => {
     const testHTML = '<a href="/File:SkinArt_Cerberus_Default.jpg" class="image"><img alt="SkinArt Cerberus Default.jpg" src="https://static.wikia.nocookie.net/smite_gamepedia/images/d/de/SkinArt_Cerberus_Default.jpg/revision/latest/scale-to-width-down/250?cb=20180109181100" decoding="async" width="250" height="333"></a>';
     const url = parseImageURL(testHTML);
@@ -35,7 +43,7 @@ test('parsing image url', () => {
 });
 
 test('parse a complete God object', () => {
-    const testHTML = fs.readFileSync('./testHTML.txt').toString();
-    const god = parseGod(testHTML);
+    const god = parseGod(fullPage);
     expect(god).toBeDefined;
+    expect(god.autoAttack.attackDuration).toBe(1);
 });

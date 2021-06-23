@@ -78,7 +78,7 @@ export function parseName(html: string): string {
 }
 
 export function parseStat(html: string, statName: string) {
-    const str = String.raw`<th>${statName}.*>(?<base>\d+\.?\d*).*?(?<perLevel>\d+\.?\d*)`;
+    const str = String.raw`<th>${statName}.*?>(?<base>\d+\.?\d*).*?(?<perLevel>\d+\.?\d*)`;
     const regex = new RegExp(str, 'i');
     const match = regex.exec(html);
     if (!match || !match.groups) throw new Error(`Stat parse failed\nRegex: ${str}\nfrom:\n${html}`);
